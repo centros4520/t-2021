@@ -1,6 +1,9 @@
 <!-- https://codyhouse.co/demo/full-screen-pop-out-navigation/index.html -->
 <header class="cd-header">
-		<div class="cd-logo"><a href="/">Logo</a></div>
+		<div class="cd-logo">
+		{% assign page_paths = site.header_pages | default: default_paths %}
+    	<a class="site-title page-link" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> 
+		</div>
 
 		<nav>
 			<ul class="cd-secondary-nav">
@@ -25,19 +28,22 @@
 
 	<nav>
 		<ul class="cd-primary-nav">
-			<li class="cd-label">Section Title</li>
-            <li><a href="/">Page Link</a></li>
-            <li><a href="/">Page Link</a></li>
-            <li><a href="/">Page Link</a></li>
-            <li class="cd-label">Section Title</li>
-            <li><a href="/">Page Link</a></li>
-            <li><a href="/">Page Link</a></li>
-            <li><a href="/">Page Link</a></li>
-            <li class="cd-label">Section Title</li>
+			<li class="cd-label">Pages</li>
+            {% for link in site.data.navigation %}
+			{% assign current = nil %}
+			{% if page.url contains link.url %}
+				{% assign current = 'active' %}
+			{% endif %}
+			<li class="{{ current }}">
+				<a class="page-link"  href="{{ link.url }}">{{ link.title }}</a>
+			</li>
+			{% unless forloop.last %}<span class="menu-separator"></span>{% endunless %}
+			{% endfor %}
+            <!-- <li class="cd-label">Section Title</li>
 			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
 			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
 			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
-			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li> -->
 		</ul>
   </nav>
   

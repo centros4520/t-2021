@@ -2,11 +2,14 @@
 
 https://codyhouse.co/demo/full-screen-pop-out-navigation/index.html#0
 
+
 -------------------------------- */
 
 $base-header-color: #fdfdfd !default;
 $base-overlay-color: rgba(253, 253, 253, 0.95) !default;
 $link-color:#06446e;
+$small-screen:768px;
+$medium-screen:1170px;
 
 * {
   -webkit-box-sizing: border-box;
@@ -51,7 +54,7 @@ Header components
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 768px) {
+@include min-media-query($small-screen) {
   .cd-header {
     height: 80px;
     // background: transparent;
@@ -62,10 +65,9 @@ Header components
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
      }
   }
-  
 }
 
-@media only screen and (min-width: 1170px) {
+@include min-media-query($medium-screen) {
   .cd-header {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
@@ -103,6 +105,7 @@ Header components
     }
   }
 }
+
 /* -------------------------------- 
 
 Logo components 
@@ -114,23 +117,31 @@ Logo components
   position: absolute;
   top: 50%;
   bottom: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size:1.2em;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: .875em;
+  // left: 0.875em;
+  left: 0.5em;
   img {
     display: block;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@include min-media-query($small-screen) {
   .cd-logo {
-    left: 2.6em;
+    // left: 2.6em;
+    left: 0.875em;
   }
 }
 
+@include min-media-query($medium-screen) {
+
+}
 /* -------------------------------- 
 
 Secondary Nav Links components 
@@ -146,7 +157,7 @@ Secondary Nav Links components
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 10em;
+  right: 2.6em;
   /* hidden on small devices */
   display: none;
   li {
@@ -161,12 +172,15 @@ Secondary Nav Links components
   }
 }
 
-@media only screen and (min-width: 768px) {
+@include min-media-query($small-screen) {
   .cd-secondary-nav {
     display: block;
   }
 }
 
+@include min-media-query($medium-screen) {
+
+}
 /* -------------------------------- 
 
 Primary Nav Trigger components 
@@ -180,13 +194,15 @@ Primary Nav Trigger components
   height: 100%;
   width: 50px;
   background-color: transparent;
+  /* hide the text and icon unless on small devices */
+  display: none;
   .cd-menu-text {
     color: $custom-brand-color-primary;
     text-transform: uppercase;
     font-weight: 700;
-    /* hide the text on small devices */
+    /* hide the text and icon unless on small devices */
     display: none;
-  }
+   }
   .cd-menu-icon {
     /* this span is the central line of the menu icon */
     display: inline-block;
@@ -249,14 +265,14 @@ Primary Nav Trigger components
   }
 }
 
-@media only screen and (min-width: 768px) {
+@include media-query($small-screen) {
   .cd-primary-nav-trigger {
     width: 100px;
     padding-left: 1em;
     background-color: transparent;
     height: 30px;
     line-height: 30px;
-    right: 2.2em;
+    right: 0em;
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -264,6 +280,7 @@ Primary Nav Trigger components
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    display: inline-block;
     .cd-menu-text {
       display: inline-block;
     }
@@ -279,6 +296,9 @@ Primary Nav Trigger components
   }
 }
 
+@include min-media-query($medium-screen) {
+
+}
 /* -------------------------------- 
 
 Primary Nav Links components 
@@ -337,7 +357,7 @@ Primary Nav Links components
 
 .cd-primary-nav {
   .cd-label {
-    color: $custom-brand-color-primary;
+    color: $grey-color-dark;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -353,13 +373,13 @@ Primary Nav Links components
   }
 }
 
-@media only screen and (min-width: 768px) {
+@include min-media-query($small-screen) {
   .cd-primary-nav {
     padding: 80px 0;
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@include min-media-query($medium-screen) {
   .cd-primary-nav {
     li {
       font-size: 30px;
@@ -369,5 +389,11 @@ Primary Nav Links components
       font-size: 16px;
       font-size: 1rem;
     }
+  }
+}
+
+.page-link{
+  &:hover{
+    text-decoration: none;
   }
 }
