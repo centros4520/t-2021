@@ -10,16 +10,19 @@ $spacer: 20px;
 // Homepage Intro Banner jumbotron>container>intro
 .jumbotron {
   border-bottom: 1px solid #edefee;
-  padding: ($spacer * 2) 0;
-  margin-bottom: ($spacer * 2);
-  @media(min-width: 640px) {
-    padding: ($spacer * 2) 0 ($spacer * 3);
-    margin-bottom: ($spacer * 3);
-  }
+  padding: ($spacer * 0) 0;
+  margin-bottom: ($spacer * 1);
+}
+
+@include min-media-query($on-laptop) {
+ .jumbotron { 
+    padding: ($spacer * 1) 0 ($spacer * 1);
+    margin-bottom: ($spacer * 2);
+ }
 }
 
 .intro {
-  margin-bottom: ($spacer * 2);
+  margin-bottom: ($spacer * 0);
   &__pre,
   &__post {
     text-transform: uppercase;
@@ -29,7 +32,7 @@ $spacer: 20px;
     font-size: 1.8rem;
     line-height: 1.2;
     font-weight: bold;
-    margin: 10px 0 20px;
+    margin: 5px 0 20px;
     @media(min-width: 640px) {
       font-size: 2.2rem;
       max-width: 80%;
