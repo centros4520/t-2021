@@ -4,8 +4,17 @@
 
 		<nav>
 			<ul class="cd-secondary-nav">
-				<li><a href="/about/">Menu 1</a></li>
-				<li><a href="/about/">Menu 2</a></li>
+				<!--https://codegaze.github.io/2015/08/08/how-to-create-a-dynamic-navigation-menu-in-jekyll/  -->
+				{% for link in site.data.navigation %}
+					{% assign current = nil %}
+					{% if page.url contains link.url %}
+						{% assign current = 'active' %}
+					{% endif %}
+					<li class="{{ current }}">
+						<a class="page-link"  href="{{ link.url }}">{{ link.title }}</a>
+					</li>
+					{% unless forloop.last %}<span class="menu-separator"></span>{% endunless %}
+				{% endfor %}
 			</ul>
 		</nav> <!-- cd-nav -->
 
