@@ -62,10 +62,14 @@ Site header
   font-size: 1.6em;
   font-weight: bold;
   font-family: $base-font-family1;
+  color: $custom-brand-color-primary;
+  &:visited {
+    color:$custom-brand-color-primary
+  }
 }
 
 a.site-title:hover {
-  color: $custom-brand-color-primary;
+  color: darken($custom-brand-color-primary,30);
   text-decoration: none;
 }
 
@@ -250,5 +254,7 @@ Fixes
 @import
   "custom/header-fullscreen",
   "custom/homepage",
+  "custom/homepage-project",
+  "custom/homepage-til",
   "code/monokai.sublime"
 ;

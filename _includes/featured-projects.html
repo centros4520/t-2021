@@ -1,5 +1,6 @@
-<h3 class="section-title">Latest Projects</h3>
-<dl class="projects">
+<h3 class="section-title">Featured Projects</h3>
+<!-- 
+<dl class="articles">
     {% for project in site.projects limit:3 %}
         <dt>
             <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
@@ -7,7 +8,45 @@
             <p>{{ project.excerpt  | strip_html | truncatewords:50}} </p>
         </dd>
     {% endfor %}
-</dl>
+</dl> -->
+
+<a class="next-article  -v5" href="./about" data-id="/redux-side-effects">
+<span class="container">
+<span class="heading">Featured Project</span>
+<span class="h3"><span>Managing side effects in&nbsp;Redux</span></span>
+<span class="excerpt">Learn to manage impure side effects in a Redux store with&nbsp;middleware.</span>
+<span class="big-button -next" href="./about/">Read</span></span></a>
+
+<section class="projects" style="display:none">
+  {% assign projects = site.projects | sort: 'date' | reverse %} 
+  {% for project in projects limit:1 %} 
+  {% capture this_year %} {{ project.date | date: "%Y" }} {% endcapture %} 
+  {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
+  {% if forloop.first %}
+  <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
+  <ul class="project-list">
+    {% endif %}
+    <li>
+    
+      <h2 class="project__title">
+        <a class="project-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+      </h2>
+       {{ project.excerpt | strip_html | truncatewords:20}} {% capture content_words %} {{ project.content | number_of_words }}
+      {% endcapture %} {% capture excerpt_words %} {{ project.excerpt | number_of_words }} {% endcapture %} {% if excerpt_words
+      != content_words %} 
+
+     <small> <a class="btn btn-sm btn-primary" href="{{ project.url }}#read-more" role="button">  <i class="fa fa-arrow-circle-right"></i></a>
+    </small> {% endif %}
+    </li>
+    {% if forloop.last %}
+  </ul>
+  {% else %} {% if this_year != next_year %}
+  </ul>
+  <h4 class="project__year" id="{{ next_year }}-ref">Year {{next_year}}</h4>
+  <ul class="project-list">
+    {% endif %} {% endif %} {% endfor %}
+</section>
+
 
 <!--
 {% for project in site.projects limit:1  %}
