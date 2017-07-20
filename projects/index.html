@@ -1,0 +1,52 @@
+--- 
+layout: notitle 
+title: "Project List" 
+---
+
+<section class="projects">
+  {% assign projects = site.projects | sort: 'date' | reverse %} {% for project in projects %} {% capture this_year %} {{ project.date
+  | date: "%Y" }} {% endcapture %} {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} {% if
+  forloop.first %}
+  <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
+  <ul class="project-list">
+    {% endif %}
+    <li>
+    
+      <h2 class="project__title">
+        <a class="project-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+      </h2>
+       {{ project.excerpt | strip_html | truncatewords:20}} {% capture content_words %} {{ project.content | number_of_words }}
+      {% endcapture %} {% capture excerpt_words %} {{ project.excerpt | number_of_words }} {% endcapture %} {% if excerpt_words
+      != content_words %} 
+      <!-- {% assign date_format = "%b %-d" | default: "%b %-d, %Y" %}
+      <span class="project-meta">{{ project.date | date: date_format }}</span> -->
+     <small> <a class="btn btn-sm btn-primary" href="{{ project.url }}#read-more" role="button">  <i class="fa fa-arrow-circle-right"></i></a>
+    </small> {% endif %}
+    </li>
+    {% if forloop.last %}
+  </ul>
+  {% else %} {% if this_year != next_year %}
+  </ul>
+  <h4 class="project__year" id="{{ next_year }}-ref">Year {{next_year}}</h4>
+  <ul class="project-list">
+    {% endif %} {% endif %} {% endfor %}
+</section>
+
+
+<!-- {% assign items = site.projects | sort: 'date' | reverse %}
+{% for project in items %}
+	<div class="project">
+    <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+    {{ project.excerpt  | strip_html | truncatewords:50}} 
+    {% capture content_words %} 
+      {{ project.content | number_of_words }} 
+    {% endcapture %} 
+    {% capture excerpt_words %} 
+      {{ project.excerpt | number_of_words }} 
+    {% endcapture %} 
+    {% if excerpt_words != content_words %}
+    <small><a class="btn btn-sm btn-primary" href="{{ project.url }}#read-more" role="button">Read more <i class="fa fa-arrow-circle-right"></i></a>
+    </small>
+    {% endif %} 
+	</div>
+{% endfor %} -->

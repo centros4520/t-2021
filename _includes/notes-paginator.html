@@ -1,0 +1,43 @@
+<div class="paginator-list">
+<!-- <a href="{{ " /articles " | prepend: site.baseurl }}">All</a><span class="u-separate"></span>
+<a href="{{ " /articles/archive/ " | prepend: site.baseurl }}">Archive</a><span class="u-separate"></span>
+<a href="{{ " /articles/category/ " | prepend: site.baseurl }}">Category</a><span class="u-separate"></span>
+<a href="{{ " /articles/tag/ " | prepend: site.baseurl }}">Tags</a> -->
+
+{% if paginator.total_pages > 1 %}
+<span class="pagination">  
+  {% if paginator.previous_page %}
+  <a class="page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> 
+  {% else %}
+  <!-- <span>&laquo; Prev</span>  -->
+  {% endif %} 
+  {% for page in (1..paginator.total_pages) %} 
+  {% if page == paginator.page %}
+  <div class="paginator-current">Page {{ page }}</div>
+ {% elsif page == 1 %} 
+    <!-- <a class="page-number" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>   -->
+    <a class="page-number" href="{{ " /notes " | prepend: site.baseurl }}">{{ page }}</a>  
+  {% else %}
+  <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a> 
+   {% endif %} 
+   {% endfor %} 
+  {% if paginator.next_page %}
+  <a class="page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> 
+  {% else %}
+  <!-- <span>Next &raquo;</span>  -->
+  {% endif %}
+</span>
+{% endif %}
+<br/ >
+{%for link in site.article_navigation %}
+  {% assign current = nil %}
+  {% if page.url contains link.url %}
+      {% assign current = 'active' %}
+  {% endif %}
+  <span class="{{ current }}">
+      <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+  </span>
+  {% unless forloop.last %}|{% endunless %}
+{% endfor %}
+
+</div>

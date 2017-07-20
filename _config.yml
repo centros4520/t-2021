@@ -14,10 +14,61 @@ github_username:  jekyll
 minima:
   date_format: "%b %-d, %Y"
 
+name: Matt Couchman
+job: front end engineer
+location: Birmingham, UK
+languages: HTML, CSS and Javascript
+twitter_username: mattcouchman
+github_username:  mattcouchman
+codepen_username:  mattcouchman
+email_address: some@email.com
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
-# - about.html
+#- about.md
+#- concepts/index.html
+
+article_navigation:
+- title: Archive
+  url: /notes/archive/   
+- title: Category
+  url: /notes/category/  
+- title: Tag
+  url: /notes/tag/   
+
+#https://jekyllrb.com/docs/permalinks/
+permalink: "/notes/:year/:month/:title/"
+
+# excerpt_separator
+# http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/
+excerpt_separator: <!--more-->
+
+# Gems
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "/notes/page:num"
+
+# Build Collections
+# https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
 
 # Build settings
 markdown: kramdown
@@ -25,3 +76,4 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+

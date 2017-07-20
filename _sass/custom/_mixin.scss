@@ -1,0 +1,9 @@
+// From minima.scss
+// $on-palm:          600px !default;
+// $on-laptop:        800px !default;
+
+@mixin min-media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}

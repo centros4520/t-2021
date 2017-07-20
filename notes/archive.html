@@ -1,0 +1,20 @@
+---
+layout:   page
+title:    Archive Page
+---
+{% comment%}
+Here we generate all the categories.
+https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
+{% endcomment%}
+
+{% assign postsByMonthYear = site.posts | group_by_exp: "post", "post.date | date: '%b %Y'" %}
+{% for monthYear in postsByMonthYear %}
+	<h4>{{ monthYear.name }}</h4>
+	<ul class="archive-list">
+	  {% for post in monthYear.items %}
+	    <li><span class="grey">{{ post.date | date: "%d" }}</span> <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+{% endfor %}
+
+{% include notes-paginator.html %}

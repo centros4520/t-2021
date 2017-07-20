@@ -1,4 +1,254 @@
+@charset "utf-8";
+// Import Mixin.
+@import "custom/mixin";
+
+// Define defaults for each variable.
+$base-font-family1: 'Oswald',sans-serif !default;
+$base-font-family2: 'Playfair Display', serif;
+$base-font-family3: 'Roboto',sans-serif;
+$base-font-size: 18px !default;
+$custom-brand-color-primary:#f92672;
+
+/* -------------------------------- 
+
+Basic styling
+
+-------------------------------- */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family1;
+  font-weight: 500;
+}
+
+a, a:link, a:visited {
+  color: $custom-brand-color-primary;
+}
+
+a:hover {
+  color: darken( $custom-brand-color-primary, 30% );//#900;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -99px;
+  visibility: hidden;
+}
+
+a.active {
+  font-weight: 600;
+}
+
+/* -------------------------------- 
+
+Site header
+
+-------------------------------- */
+.site-header {
+  border-top: 0px solid $grey-color-dark;
+  border-bottom: 0px solid $grey-color-light;
+}
+
+.site-title {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: $base-font-family1;
+}
+
+a.site-title:hover {
+  color: $custom-brand-color-primary;
+  text-decoration: none;
+}
+
+.site-title,
+.site-nav {
+  float: none;
+}
+
+/* -------------------------------- 
+
+Site Footer
+
+-------------------------------- */
+.site-footer {
+  border-top: 0px solid $grey-color-dark;
+}
+
+.footer-heading {
+  border-top: 1px solid $grey-color-light;
+  padding-top: 30px;
+}
+
+/* -------------------------------- 
+
+Figure Caption
+https://stackoverflow.com/questions/8572952/border-length-smaller-than-div-width
+
+-------------------------------- */
+figcaption {
+  font-size: 0.85em;
+  text-align: center;
+  line-height: 1.4em;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px
+}
+
+figcaption:before {
+  content: " ";
+  position: absolute;
+  left: 25%;
+  top: 0;
+  height: 1px;
+  width: 50%;
+  border-top: 2px solid $grey-color-dark;
+}
+
+/* -------------------------------- 
+
+Content
+
+-------------------------------- */
+.project {
+  margin-bottom: 20px;
+}
+
+ul.archive-list,
+ul.category-list,
+ul.project-list,
+ul.note-list {
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h2.project__title,
+h2.note__title {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.project__year,
+.note__year {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 2px solid $grey-color-dark;
+  display: inline-block;
+}
+
+.project-list li,
+.note-list li {
+  margin-bottom: 1.5rem;
+}
+
+ul.project-list li:last-child,
+ul.note-list li:last-child {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1em;
+}
+
+.project-meta,
+.note-meta {
+  font-weight: bold
+}
+
+.note-meta {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+@include min-media-query($on-laptop) {
+  .project-list li,
+  .note-list li {
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------------------- 
+
+Notes Paginator
+
+-------------------------------- */
+
+.page-number {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.paginator-list {
+  margin-top: 2rem;
+}
+
+.paginator-current {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $grey-color-light;
+}
+
+
+/* -------------------------------- 
+
+Code formatting
+http://richleland.github.io/pygments-css/
+http://vgaidarji.me/blog/2016/02/27/obsidian-theme-for-rouge-syntax-highlighter/
+http://anotherpeak.org/blog/tech/2016/09/22/syntax_highlighter_jekyll_rouge.html 
+rougify style monokai.sublime > _sass/codehighlight/monokai.sublime.css
+
+-------------------------------- */
+pre,
+code {
+  border: 0px solid $grey-color-light;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.highlighter-rouge .highlight,
+.highlight {
+  background: #333;
+}
+
+/* -------------------------------- 
+
+Fixes
+
+-------------------------------- */
+//Solve Wrapping issue due to full-screen navigation
+.wrapper,.page-content,.footer-col {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing:initial;
+  box-sizing: initial;
+  &:after, &:before {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+  }
+}
+
+@include media-query($on-palm) {
+  .menu-separator {
+    display: none
+  }
+}
+
+/* -------------------------------- 
+
 // Import partials.
+
+-------------------------------- */
 @import
-  "custom/header-fullscreen"
+  "custom/header-fullscreen",
+  "custom/homepage",
+  "code/monokai.sublime"
 ;

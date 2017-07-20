@@ -181,7 +181,7 @@ Primary Nav Trigger components
   width: 50px;
   background-color: transparent;
   .cd-menu-text {
-    color: $link-color;
+    color: $custom-brand-color-primary;
     text-transform: uppercase;
     font-weight: 700;
     /* hide the text on small devices */
@@ -202,7 +202,7 @@ Primary Nav Trigger components
     transform: translateX(-50%) translateY(-50%);
     width: 18px;
     height: 2px;
-    background-color: $link-color;
+    background-color: $custom-brand-color-primary;
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -212,7 +212,7 @@ Primary Nav Trigger components
       width: 100%;
       height: 100%;
       position: absolute;
-      background-color: $link-color;
+      background-color: $custom-brand-color-primary;
       right: 0;
       -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
       -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
@@ -227,7 +227,7 @@ Primary Nav Trigger components
     &.is-clicked {
       background-color: rgba(255, 255, 255, 0);//make middle bar transparent
       &::before, &::after {
-        background-color: $link-color;
+        background-color: $custom-brand-color-primary;
       }
       &::before {
         top: 0;
@@ -337,7 +337,7 @@ Primary Nav Links components
 
 .cd-primary-nav {
   .cd-label {
-    color: $link-color;
+    color: $custom-brand-color-primary;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
