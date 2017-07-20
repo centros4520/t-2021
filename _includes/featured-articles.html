@@ -1,0 +1,12 @@
+<h3 class="section-title">Latest Articles</h3>
+<dl class="articles">
+    {% for post in site.posts limit:3 %}
+    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <dt>
+            <p class="note-meta">{{ post.date | date: date_format }}</p>
+        </dt><dd>
+            <h2><a class="note-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+            <p> {{ post.excerpt  | strip_html | truncatewords:20}}  </p>
+        </dd>
+    {% endfor %}
+</dl>
