@@ -9,9 +9,9 @@
 $spacer: 20px;
 // Homepage Intro Banner jumbotron>container>intro
 .jumbotron {
-  border-bottom: 1px solid #edefee;
+  border-bottom: 0px solid #edefee;
   padding: ($spacer * 0) 0;
-  margin-bottom: ($spacer * 1);
+  margin-bottom: ($spacer * 1.5);
 }
 
 @include min-media-query($on-laptop) {
