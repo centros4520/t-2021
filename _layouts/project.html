@@ -10,5 +10,5 @@ layout: default
   <div class="post-content">
    {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
   </div>
-
+  {% include collection-paginator.html %}
 </article>
