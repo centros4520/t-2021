@@ -289,6 +289,42 @@ Footer
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
+/* -------------------------------- 
+
+Project List
+
+-------------------------------- */
+.excerpt{
+    margin-left:100px;
+    padding-bottom: 10px;
+    display:inline-block;
+  }
+.project__container__next {
+      margin-top: 2rem;
+}
+.projects{
+.post-index-item {
+  border:none;
+  .article-title {
+     font-family: $base-font-family1;
+     font-size: 2rem;
+     line-height: 2rem;
+  }
+ }
+}
+@include media-query($on-palm) {
+  .excerpt{
+    margin: 0;
+    display:block;
+    padding: 0px 20px 10px 20px;
+  }
+  .project__year{
+    margin-left: 20px;
+  }
+}
+
+
+
 
 /* -------------------------------- 
 

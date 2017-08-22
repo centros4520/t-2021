@@ -2,24 +2,25 @@
 layout: notitle 
 title: "Project List" 
 ---
-
+<!-- 
 <section class="projects">
-  {% assign projects = site.projects | sort: 'date' | reverse %} {% for project in projects %} {% capture this_year %} {{ project.date
-  | date: "%Y" }} {% endcapture %} {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} {% if
-  forloop.first %}
+  {% assign projects = site.projects | sort: 'date' | reverse %} 
+  {% for project in projects %} 
+  {% capture this_year %} {{ project.date  | date: "%Y" }} {% endcapture %} 
+  {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
+  {% if forloop.first %}
   <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
   <ul class="project-list">
     {% endif %}
     <li>
-    
-      <h2 class="project__title">
+       <h2 class="project__title">
         <a class="project-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
       </h2>
        {{ project.excerpt | strip_html | truncatewords:20}} {% capture content_words %} {{ project.content | number_of_words }}
       {% endcapture %} {% capture excerpt_words %} {{ project.excerpt | number_of_words }} {% endcapture %} {% if excerpt_words
       != content_words %} 
-      <!-- {% assign date_format = "%b %-d" | default: "%b %-d, %Y" %}
-      <span class="project-meta">{{ project.date | date: date_format }}</span> -->
+  {% assign date_format = "%b %-d" | default: "%b %-d, %Y" %}
+      <span class="project-meta">{{ project.date | date: date_format }}</span>
      <small> <a class="btn btn-sm btn-primary" href="{{ project.url }}#read-more" role="button">  <i class="fa fa-arrow-circle-right"></i></a>
     </small> {% endif %}
     </li>
@@ -31,7 +32,57 @@ title: "Project List"
   <ul class="project-list">
     {% endif %} {% endif %} {% endfor %}
 </section>
+ -->
+<!-- 
+<h3 class="section-title">My Projects</h3>
+{% assign projects = site.projects | sort: 'date' | reverse %} 
+{% if site.projects %}
+<div class='post-index' id='toc'>
+  <div class='container'>
+     {% for project in projects %} 
+    <a class='post-index-item' href="{{ base }}{{ project.url | replace: ".html", "" }}">
+        <span class='date'>{{ project.date  | date: "%b %Y"  }}</span>
+        <span class='article-title'>{{ project.title | strip_html | truncatewords:18 | escape  }}</span>
+      </a>
+        <span class='excerpt'>{{ project.excerpt | strip_html | truncatewords:20}} </span>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+-->
+<header class="post-header">
+    <!--<h3 class="section-title">Library</h3>  -->
+    <h1 class="section-title ">{{ page.title | escape }}</h1>
+</header> 
 
+<section class="projects">
+  {% assign projects = site.projects | sort: 'date' | reverse %} 
+  {% for project in projects %} 
+  {% capture this_year %} {{ project.date  | date: "%Y" }} {% endcapture %} 
+  {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
+  {% if forloop.first %}
+  <div class="project__container">
+  <h4 class="project__year" id="{{ this_year }}-ref">Year {{this_year}}</h4>
+  <div class="project__list">
+  {% endif %}
+    <a class='post-index-item' href="{{ base }}{{ project.url | replace: ".html", "" }}">
+        <span class='date'>{{ project.date  | date: "%b %Y"  }}</span>
+        <span class='article-title'>{{ project.title | strip_html | truncatewords:18 | escape  }}</span>
+      </a>
+        <span class='excerpt'>{{ project.excerpt | strip_html | truncatewords:20}} </span>
+  {% if forloop.last %}
+  </div>
+  </div><!--End of project__container-->
+  {% else %} {% if this_year != next_year %}
+  </div>
+  </div><!--End of project__container-->
+  <div class="project__container__next">
+  <h4 class="project__year project__year__next" id="{{ next_year }}-ref">Year {{next_year}}</h4>
+  <div class="project__list">
+    {% endif %} 
+    {% endif %} 
+  {% endfor %}
+</section>
 
 <!-- {% assign items = site.projects | sort: 'date' | reverse %}
 {% for project in items %}
