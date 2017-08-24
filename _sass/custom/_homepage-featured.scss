@@ -1,0 +1,483 @@
+.Grid {
+    @include flexbox();
+}
+
+.SmartImage--background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.SmartImage {
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.FeaturedTileBand-Content {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FeaturedTileBand {
+    @include flex(1);
+    position: relative;
+    margin-bottom: 1px; // margin-bottom: 2rem; 
+    // h3 {
+    //   text-transform: uppercase;
+    //   font-size: 12px;
+    //   line-height: 20px;
+    //   letter-spacing: 1px;
+    //   color: #000;
+    //   margin-bottom: 20px;
+    //   a {
+    //     -webkit-transition: color .2s;
+    //     -moz-transition: color .2s;
+    //     -ms-transition: color .2s;
+    //     -o-transition: color .2s;
+    //     transition: color .2s;
+    //     display: inline;
+    //     margin: 0;
+    //     background: none;
+    //     text-decoration: none;
+    //     border-bottom: 2px solid;
+    //     &:focus, &:hover {
+    //       cursor: pointer;
+    //       color: #6d7e88;
+    //     }
+    //   }
+    // }
+    .Grid {
+        height: 100%;
+    }
+}
+
+.FeaturedTileBand--left .FeaturedTileBand-MainContainer {
+    @include order(-1);
+}
+
+.FeaturedTileBand:first-child {
+    margin-top: 96px;
+}
+
+.FeaturedTileBand-Content {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FeaturedTileBand-GridFiller {
+    &:first-child {
+        @include order(-2);
+    }
+    &:last-child {
+        @include order(1);
+    }
+}
+
+.FeaturedTileBand-Placeholder {
+    box-sizing: border-box;
+}
+
+.FeaturedTileBand-MainContainer {
+    position: relative;
+}
+
+.FeaturedTileBand-Main {
+    @include flexbox();
+    position: relative;
+    background-color: $background-color;
+    box-sizing: border-box;
+    height: 340px;
+    padding: 50px;
+    .Button {
+        // z-index: 100;
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+.FeaturedTileBand-MainContent {
+    @include align-self(center)
+}
+
+@include small-screen() {
+    .Grid {
+        @include box-orient(vertical);
+        @include flex-direction(column);
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .FeaturedTileBand:first-child {
+        margin-top: 40px;
+    }
+    .FeaturedTileBand-GridFiller {
+        display: none;
+    }
+    .FeaturedTileBand-PlaceholderContainer {
+        position: absolute;
+        top: 32px;
+        right: 0;
+        left: 0;
+    }
+    .FeaturedTileBand-Placeholder {
+        padding-top: -webkit-calc(100% - 16px - 64px);
+        padding-top: calc(100% - 16px - 64px);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .FeaturedTileBand-MainContent {
+        padding: 0;
+        width: 100%
+    }
+    .Button {
+        text-align: center;
+    }
+}
+
+@include middle-screen() {
+    .Grid {
+        max-width: 1180px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .FeaturedTileBand {
+        height: 532px;
+    }
+    .FeaturedTileBand-Placeholder {
+        height: 548px;
+    }
+}
+
+@include medium-screen() {
+    .FeaturedTileBand .Grid {
+        @include align-items(center);
+    }
+    .FeaturedTileBand-GridFiller {
+        @include flex(1);
+    }
+    .FeaturedTileBand-PlaceholderContainer {
+        @include flex(5)
+    }
+    .FeaturedTileBand-Placeholder {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .FeaturedTileBand-MainContainer {
+        @include flex(5);
+    }
+}
+
+@include large-screen() {
+    .Grid {
+        max-width: 1180px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .FeaturedTileBand {
+        height: 520px;
+    }
+    .FeaturedTileBand-Placeholder {
+        height: 308px;
+    }
+}
+
+.FeaturedTileBand-Title {
+    text-transform: none;
+    // color: #000;
+    // a {
+    //     background-image: linear-gradient(180deg, transparent 65%, $custom-brand-color-primary 0);
+    //     background-size: 0 100%;
+    //     background-repeat: no-repeat;
+    //     text-decoration: none;
+    //     @include transition(transition, background-size .4s ease);
+    //     &:focus,
+    //     &:hover {
+    //         background-size: 100% 100%;
+    //         cursor: pointer;
+    //     }
+    // }
+}
+
+@include small-content() {
+    .FeaturedTileBand-Main {
+        margin: 40px 20px;
+        padding: 30px;
+        height: auto;
+    }
+    .FeaturedTileBand-Title {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+    }
+    .Button {
+        font-size: 11px;
+    }
+}
+
+@include medium-content() {
+    .FeaturedTileBand-Main {
+        margin: 80px 20px;
+        height: auto;
+    }
+    .FeaturedTileBand-Title {
+        font-size: 26px;
+        line-height: 37px;
+        letter-spacing: -1px;
+    }
+}
+
+@include large-content() {
+    .FeaturedTileBand-Main {
+        height: auto;
+    }
+    .FeaturedTileBand-Title {
+        font-size: 26px;
+        line-height: 37px;
+        letter-spacing: -1px;
+    }
+}
+
+@include extralarge-content() {
+    .FeaturedTileBand-Title {
+        font-size: 33px;
+        line-height: 42px;
+        letter-spacing: -1.2px;
+    }
+}
+
+.Button {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #6d7e88;
+    text-transform: uppercase;
+    border: 1px solid #a2aeb6;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: Transparent;
+    text-decoration: none;
+    @include transition(transition, background-color .5s ease, color .5s ease, border .5s ease); // -webkit-transition: background-color .15s ease, color .15s ease, border .15s ease;
+    // -moz-transition: background-color .15s ease, color .15s ease, border .15s ease;
+    // -ms-transition: background-color .15s ease, color .15s ease, border .15s ease;
+    // -o-transition: background-color .15s ease, color .15s ease, border .15s ease;
+    // transition: background-color .15s ease, color .15s ease, border .15s ease;
+    a {
+        text-decoration: none;
+        @include transition(transition, color .5s ease); // -webkit-transition: color .2s;
+        // -moz-transition: color .2s;
+        // -ms-transition: color .2s;
+        // -o-transition: color .2s;
+        // transition: color .2s;
+        display: inline;
+        margin: 0;
+        background: none;
+        border-bottom: 2px solid;
+        &:focus,
+        &:hover {
+            cursor: pointer;
+            color: #6d7e88;
+        }
+    } // svg {
+    //   transform: translateY(1.2px);
+    // }
+    // .Button--icon {
+    //   margin-left: 4px;
+    // }
+    &:hover {
+        color: $background-color;
+        border-color: #262c30;
+        background-color: #262c30;
+        text-decoration: none; // svg path {
+        //   stroke: #fff;
+        // }
+    }
+}
+
+// @media (max-width: 34.365em) {
+//   .Button {
+//     font-size: 11px;
+//   }
+// }
+// @media (max-width: 49.99em) {
+//     .Button {
+//         text-align: center;
+//     }
+// }
+// @media (max-width:49.99em) {
+//     .FeaturedTileBand-MainContent {
+//         padding: 0;
+//         width: 100%
+//     }
+// }
+// @media (max-width: 49.99em) {
+//   .Grid {
+//     @include box-orient(vertical);
+//     @include flex-direction(column);
+//     width: auto;
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+// }
+// @media (min-width: 50em) and (max-width: 89.99em) {
+//   .Grid {
+//     max-width: 1180px;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+// @media (min-width: 90em) {
+//   .Grid {
+//     max-width: 1180px;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+// @media (min-width: 50em) and (max-width: 89.99em) {
+//   .FeaturedTileBand {
+//     height: 432px;
+//   }
+// }
+// @media (min-width: 90em) {
+//   .FeaturedTileBand {
+//     height: 960px;
+//   }
+// }
+// @media (min-width: 50em) {
+//   .FeaturedTileBand .Grid {
+//      @include align-items(center);
+//   }
+// }
+// @media (max-width: 49.99em) {
+//   .FeaturedTileBand:first-child {
+//     margin-top: 40px;
+//   }
+// }
+// @media (max-width: 49.99em) {
+//   .FeaturedTileBand-GridFiller {
+//     display: none;
+//   }
+// }
+// @media (min-width: 50em) {
+//   .FeaturedTileBand-GridFiller {
+//     @include flex(1);
+//   }
+// }
+// @media (max-width: 49.99em) {
+//   .FeaturedTileBand-PlaceholderContainer {
+//     position: absolute;
+//     top: 32px;
+//     right: 0;
+//     left: 0;
+//   }
+// }
+// @media (min-width: 50em) {
+//   .FeaturedTileBand-PlaceholderContainer {
+//     @include flex(5)
+//   }
+// }
+// @media (max-width: 49.99em) {
+//   .FeaturedTileBand-Placeholder {
+//     padding-top: -webkit-calc(100% - 16px - 64px);
+//     padding-top: calc(100% - 16px - 64px);
+//   }
+// }
+// @media (min-width: 50em) and (max-width: 89.99em) {
+//   .FeaturedTileBand-Placeholder {
+//     height: 448px;
+//   }
+// }
+// @media (min-width: 90em) {
+//   .FeaturedTileBand-Placeholder {
+//     height: 608px;
+//   }
+// }
+// @media (max-width: 49.99em) {
+//   .FeaturedTileBand-Placeholder {
+//     margin-left: 50px;
+//     margin-right: 50px;
+//   }
+// }
+// @media (min-width: 50em) {
+//     .FeaturedTileBand-Placeholder {
+//         margin-left: 25px;
+//         margin-right: 25px;
+//     }
+// }
+// @media (min-width: 50em) {
+//     .FeaturedTileBand-MainContainer {
+//         @include flex(5);
+//     }
+// }
+// @media (max-width: 34.365em) {
+//     .FeaturedTileBand-Main {
+//         margin: 40px 20px;
+//         padding: 30px;
+//         height: auto;
+//     }
+// }
+// @media (min-width: 34.375em) and (max-width: 49.99em) {
+//     .FeaturedTileBand-Main {
+//         margin: 80px 20px;
+//         height: auto;
+//     }
+// }
+// @media (min-width: 50em) and (max-width: 73.74em) {
+//     .FeaturedTileBand-Main {
+//         height: auto;
+//     }
+// }
+// @media (max-width: 34.365em) {
+//   .FeaturedTileBand h3 {
+//     font-size: 11px;
+//   }
+// }
+// @media (max-width: 34.365em) {
+//   .FeaturedTileBand-Title {
+//     font-size: 22px;
+//     line-height: 32px;
+//     letter-spacing: -0.5px;
+//   }
+// }
+// @media (min-width: 34.375em) and (max-width: 49.99em) {
+//   .FeaturedTileBand-Title {
+//     font-size: 26px;
+//     line-height: 37px;
+//     letter-spacing: -1px;
+//   }
+// }
+// @media (min-width: 50em) and (max-width: 73.74em) {
+//   .FeaturedTileBand-Title {
+//     font-size: 26px;
+//     line-height: 37px;
+//     letter-spacing: -1px;
+//   }
+// }
+// @media (min-width: 73.75em) and (max-width: 89.99em) {
+//   .FeaturedTileBand-Title {
+//     font-size: 33px;
+//     line-height: 42px;
+//     letter-spacing: -1.2px;
+//   }
+// }
+// @media (min-width: 90em) {
+//   .FeaturedTileBand-Title {
+//     font-size: 38px;
+//     line-height: 47px;
+//     letter-spacing: -1.5px;
+//   }
+// }
