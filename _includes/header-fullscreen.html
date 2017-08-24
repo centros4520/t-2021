@@ -2,7 +2,7 @@
 <header class="cd-header">
 		<div class="cd-logo">
 		{% assign page_paths = site.header_pages | default: default_paths %}
-    	<a class="site-title page-link" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> 
+    	<a class="site-title page-link animated" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> 
 		</div>
 
 		<nav>
@@ -14,7 +14,7 @@
 						{% assign current = 'active' %}
 					{% endif %}
 					<li class="{{ current }}">
-						<a class="page-link"  href="{{ link.url }}">{{ link.title }}</a>
+						<a class="page-link animated"  href="{{ link.url }}">{{ link.title }}</a>
 					</li>
 					{% unless forloop.last %}<span class="menu-separator"></span>{% endunless %}
 				{% endfor %}

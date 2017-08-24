@@ -3,7 +3,7 @@
 <div class='post-index' id='toc'>
   <div class='container'>
     {% for post in site.posts %}
-    <a class='post-index-item' href="{{ base }}{{ post.url | replace: ".html", "" }}">
+    <a class='post-index-item animated' href="{{ base }}{{ post.url | replace: ".html", "" }}">
         <span class='date'>{{ post.date | date_to_string }}</span>
         <span class='article'>{{ post.title  | strip_html | truncatewords:18}}</span>
         <!-- <strong class='tag'>{{ post.tags | first }}</strong> -->
