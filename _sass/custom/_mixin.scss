@@ -7,3 +7,230 @@
     @content;
   }
 }
+
+// --------------------------------------------------
+// RESPONSIVE FEATURES SIZES
+// @media (max-width: 49.99em)
+// @media (min-width: 50em) and (max-width: 89.99em) 
+// @media (min-width: 90em) 
+// @media (min-width: 50em) 
+// @media (max-width: 34.365em) 
+// @media (min-width: 34.375em) and (max-width: 49.99em) 
+// @media (min-width: 50em) and (max-width: 73.74em) 
+// @media (min-width: 73.75em) and (max-width: 89.99em) 
+// Based on Ideo definition
+// --------------------------------------------------
+
+@mixin small-screen() {
+  @media screen and (max-width: 49.99em) {
+    @content;
+  }
+}
+@mixin medium-screen() {
+  @media screen and (min-width: 50em) {
+    @content;
+  }
+}
+@mixin middle-screen() {
+  @media screen and (min-width: 50em) and (max-width: 89.99em)  {
+    @content;
+  }
+}
+@mixin large-screen() {
+  @media screen and (min-width: 90em)  {
+    @content;
+  }
+}
+
+@mixin small-content() {
+  @media screen and (max-width: 34.365em)   {
+    @content;
+  }
+}
+@mixin medium-content() {
+  @media screen and (min-width: 34.375em) and (max-width: 49.99em)   {
+    @content;
+  }
+}
+@mixin large-content() {
+  @media screen and (min-width: 50em) and (max-width: 73.74em)   {
+    @content;
+  }
+}
+@mixin extralarge-content() {
+  @media screen and (min-width: 73.75em)    {
+    // and (max-width: 89.99em) 
+    @content;
+  }
+}
+// https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+       box-flex: $values;
+      -webkit-flex: $values;
+      -ms-flex: $values;
+       -moz-flex: $values;
+          flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+     -moz-box-ordinal-group: $val;  
+        box-ordinal-group: $val;    
+  	     -ms-flex-order: $val;     
+          -webkit-order: $val; 
+            -moz-order: $val;  
+               order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number> 
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width> 
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around 
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch 
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch 
+@mixin align-items($align) {
+
+   -webkit-box-align:  $align;
+   -moz-box-align:  $align;
+   box-align:  $align;
+   -ms-flex-align:  $align;
+
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+      -o-align-items: $align;
+          align-items: $align;
+
+ 
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch 
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+      -ms-flex-item-align:  $align;
+          align-self: $align;
+}
+
+
+// Box Orient
+@mixin box-orient($direction) {
+  -webkit-box-orient: $direction;
+     -moz-box-orient: $direction;
+      box-orient: $direction;
+}
+
+// https://stackoverflow.com/questions/39942415/how-to-use-sass-mixin-transition-for-applying-transition-delay-only
+@mixin transition($prop, $values...) {
+  -moz-#{$prop}: $values;
+  -ms-#{$prop}: $values;
+  -o-#{$prop}: $values;
+  -webkit-#{$prop}: $values;
+  $prop: $values;
+}
