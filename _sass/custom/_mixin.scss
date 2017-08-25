@@ -7,7 +7,12 @@
     @content;
   }
 }
-
+//same as media-query
+@mixin max-media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
 // --------------------------------------------------
 // RESPONSIVE FEATURES SIZES
 // @media (max-width: 49.99em)

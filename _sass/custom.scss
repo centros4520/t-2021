@@ -9,6 +9,8 @@ $base-font-family3: 'Roboto',sans-serif;
 $base-font-size: 18px !default;
 $custom-brand-color-primary:#f92672;
 
+//Used in Homepage and Section Title
+$spacer: 20px;
 /* -------------------------------- 
 
 Basic styling
@@ -107,6 +109,55 @@ a.site-title:hover {
     font-size: 1.2em;
   }
 }
+
+/* -------------------------------- 
+
+Section Heading
+
+-------------------------------- */
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: ($spacer * 2);
+  text-align: center;
+  position: relative;
+  @include relative-font-size(2);
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 1px;
+    background: #222;
+  }
+}
+article.post{
+  .section-title{
+    text-transform:none;
+    //line-height:2rem;
+  }
+}
+
+.custom-divider {
+    width: 32px;
+    border-bottom: 5px solid #000
+}
+@include small-screen() {
+   .custom-divider  {
+        margin-top: 22px;
+        margin-bottom: 24px
+    }
+}
+@include medium-screen() {
+   .custom-divider  {
+       margin-top: 30px;
+       margin-bottom: 32px
+    }
+}
+
+
 /* -------------------------------- 
 
 Site Footer
@@ -314,40 +365,6 @@ Footer
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
-/* -------------------------------- 
-
-Project List
-
--------------------------------- */
-.excerpt{
-    margin-left:100px;
-    padding-bottom: 10px;
-    display:inline-block;
-  }
-.project__container__next {
-      margin-top: 2rem;
-}
-.projects{
-.post-index-item {
-  border:none;
-  .article-title {
-     font-family: $base-font-family1;
-     font-size: 2rem;
-     line-height: 2rem;
-  }
- }
-}
-@include media-query($on-palm) {
-  .excerpt{
-    margin: 0;
-    display:block;
-    padding: 0px 20px 10px 20px;
-  }
-  .project__year{
-    margin-left: 20px;
-  }
-}
-
 
 
 
@@ -359,8 +376,9 @@ Project List
 @import
   "custom/header-fullscreen",
   "custom/homepage",
-  "custom/homepage-project",
+  //"custom/homepage-project",
   "custom/homepage-featured",
   "custom/homepage-til",
+  "custom/project-list",
   "code/monokai.sublime"
 ;
