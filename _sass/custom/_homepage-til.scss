@@ -11,7 +11,6 @@ https://ricostacruz.com/til/#toc
     overflow: hidden;
   }
 }
-
 .post-index-item {
   display: block;
   overflow: hidden;
@@ -22,7 +21,8 @@ https://ricostacruz.com/til/#toc
     box-shadow: none;
   }
   &:hover .article, &:focus .article {
-    transition: none;
+    //transition: none;
+    @include transition(transition, none); 
   }
   .date {
     display: block;
@@ -31,12 +31,13 @@ https://ricostacruz.com/til/#toc
     color:  $grey-color-dark;
   }
   .article {
-    color: $custom-brand-color-primary;
     margin-right: 3px;
-    transition: all 100ms linear;
+    @include transition(transition, all 100ms linear); 
+    // color: $custom-brand-color-primary;
+    // transition: all 100ms linear;
   }
   &:hover .article {
-    color: darken($custom-brand-color-primary,30)
+   // color: darken($custom-brand-color-primary,30)
   }
   &:nth-of-type(1) .article, &:nth-of-type(2) .article, &:nth-of-type(3) .article {
     font-weight: 800;
@@ -47,9 +48,18 @@ https://ricostacruz.com/til/#toc
     font-size: 0.8em;
   }
 }
+.post-item {
+  max-width: 620px;
+  margin: 0 auto;
+}
 
-@media (min-width: 768px) {
-  .post-index-item {
+.post-list {
+  margin: 40px auto;
+  padding: 20px;
+}
+
+@include medium-screen() {
+ .post-index-item {
     padding-left: 0;
     padding-right: 0;
     .date, .tag {
@@ -63,19 +73,31 @@ https://ricostacruz.com/til/#toc
     }
   }
 }
-
-.post-item {
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-.post-list {
-  margin: 40px auto;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
+@include small-screen() {
   .post-list {
     margin: 0 auto;
   }
 }
+
+
+// @media (min-width: 768px) {
+//   .post-index-item {
+//     padding-left: 0;
+//     padding-right: 0;
+//     .date, .tag {
+//       margin-top: 0.2em;
+//     }
+//     .date, article {
+//       float: left;
+//     }
+//     .tag {
+//       float: right;
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .post-list {
+//     margin: 0 auto;
+//   }
+// }
