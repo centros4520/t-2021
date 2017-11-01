@@ -39,12 +39,12 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 <div class="paginator-project">
     <div class="paginator-project-prev">
     {% if prevurl %}
-    <a href="{{prevurl}}" class="prev Button">&lArr; {{prevtitle}}</a>
+    <a href="{{prevurl}}" class="prev PaginatorLinkButton">&lArr; {{prevtitle}}</a>
     {% endif %} 
     </div>
     <div class="paginator-project-next">
     {% if nexturl %}
-    <a href="{{nexturl}}" class="nxt Button">{{nexttitle}} &rArr;</a>
+    <a href="{{nexturl}}" class="nxt PaginatorLinkButton">{{nexttitle}} &rArr;</a>
     {% endif %}
     </div>
 </div>

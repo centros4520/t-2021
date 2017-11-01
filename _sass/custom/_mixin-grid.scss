@@ -53,3 +53,38 @@
      }
     }
 }
+
+.PaginatorLinkButton {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #6d7e88;
+    text-transform: uppercase;
+    border: 5px solid $grey-color-light;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: Transparent;
+    text-decoration: none;
+    @include transition(transition, background-color .5s ease, color .5s ease, border .5s ease); // -webkit-transition: background-color .15s ease, color .15s ease, border .15s ease;
+    a {
+        text-decoration: none;
+        @include transition(transition, color .5s ease); 
+        display: inline;
+        margin: 0;
+        background: none;
+        border-bottom: 2px solid;
+        &:focus,
+        &:hover {
+            cursor: pointer;
+            color: #6d7e88;
+        }
+    } 
+    &:hover {
+        color: $background-color;
+        border-color: $grey-color-dark;
+        background-color: $grey-color-dark;
+        text-decoration: none; 
+    }
+}
