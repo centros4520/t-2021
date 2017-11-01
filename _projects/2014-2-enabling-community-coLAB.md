@@ -11,7 +11,9 @@ Enabling Community coLAB was a 2 day social innovation hackathon organised by th
 ### The Brief
 Approximately 3% of Singaporeans are living with a disability. Unfortunately, lack of understanding and engagement from the wider community often act as a barrier to enable them work, play, shop, and to be part of the community, making a contribution to their families and the society. Enabling Community coLAB was a 2 day social innovation hackathon organised by the Ministry of Social and Family Development(MSF) and SG Enable, with UP Singapore serving as the Social Innovation partner. 
 
-{% include image-full.html file="cover.jpg" alt="demo caption" height="200px" %}
+{% include image-full.html file="/2014/2/enable-1.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2014/2/enable-3.jpg" alt="demo caption" height="500px" type="full" %}
+{% include image-full.html file="/2014/2/enable-4.jpg" alt="demo caption" height="500px"  %}
 
 The proposed solutions should address the challenge of empowering people with disabilities as consumers, employees and/or entrepreneurs. 
 

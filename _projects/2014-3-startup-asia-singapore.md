@@ -7,6 +7,9 @@ date: 2014-05-07
 blurb: 'Create interesting product for the StarHub latest reward-based crowdfunding platform "Crowdtivate"'
 ---
 Startup Asia was 2-day conference organised by Tech in Asia, Asia’s largest English-language technology and startup blog. A 24-hour hackathon was simultaneously running with over 85 developers, 32 teams and 13 sponsored challenges to build products with APIs and SDKs from partner companies, such as Starhub for their upcoming reward-based crowdfunding platform, Crowdtivate. Three overall champions out of 14 finalists was selected during final round on May 17. 
+{% include image-full.html file="/2014/3/start-1.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2014/3/start-2.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2014/3/start-3.jpg" alt="demo caption" height="500px"  %}
 <!--more-->
 ### The Brief
 StarHub, Singapore’s second largest telco launched Crowdtivate as the world’s first telco-backed crowdfunding platform. It is designed as an open platform for entrepreneurs and artists to create awareness on their ideas as well as seek funding from their supporters. As part of their awareness campaign, Crowdtivate seeks for interesting B2C product suitable for crowdfunding under following categories: Creative/Arts/Books/Films; Technology or Assistive Technology.

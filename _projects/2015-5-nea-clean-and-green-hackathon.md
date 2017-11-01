@@ -8,6 +8,10 @@ blurb: 'Help make Singapore a truly clean city and a "Zero Waste Nation" by crea
 ---
 This is the fourth run of Clean & Green Hackathon 2015 co-organised by UP Singapore and the National Environment Agency which saw about 150 participants taking part. The event focused on the themes of reducing litter at sporting and leisure events and neighbourhoods as well as reducing and recycling waste towards achieving Sustainable Singapore Blueprint 2015 target. 
 <!--more-->
+{% include image-full.html file="/2015/5/nea-1.jpg" alt="demo caption" height="400px" type="full" %}
+{% include image-full.html file="/2015/5/nea-2.jpg" alt="demo caption" height="400px"  %}
+
+
 ### The Brief
 Singapore has been recognised internationally for being a clean and green city, with public education on anti-littering ongoing since 1968. However, there is still much that needs to be done to turn Singapore from a “cleaned” city to a truly clean city where everyone respects the environment and one another by taking active steps to ensure our shared spaces are litter-free. Along with public cleanliness challenge, the amount of waste generated in Singapore has risen rapidly & will continue to rise with population & economic growth. At the current rate of waste growth, a new waste-to-energy plant is required every 7 - 10 years, while new offshore landfill is required every 30 - 35 years. This will not be sustainable given scarcity of land in Singapore. 
 

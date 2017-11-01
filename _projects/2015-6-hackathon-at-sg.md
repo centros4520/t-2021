@@ -16,6 +16,9 @@ As one of the challenge sponsors, Singapore Land Authority (SLA) is seeking a ge
 - How might we enable more people participate in community volunteerism?
 - How might we enable people in need to get timely and responsive help?
 
+{% include image-full.html file="/2015/6/hack-1.jpg" alt="demo caption" height="400px" type="full" %}
+{% include image-full.html file="/2015/6/hack-2.jpg" alt="demo caption" height="400px"  %}
+
 ### Idea: Project GrabHelp
 *Universal Community Volunteerism*
 

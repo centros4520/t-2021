@@ -9,7 +9,10 @@ blurb: "Prototype solutions to improve Chinatown’s visitor experience"
 The Chinatown coLAB 2014 was a 3 day hackathon organised by the Singapore Tourism Board with UP Singapore to design and prototype solutions to improve Chinatown’s visitors experience. More than 120 participants came together over 28th-30th March 2014 to design and prototype tech solutions which bring to life Chinatown’s heritage and stories of its community and businesses.
 
 <!--more-->
-
+{% include image-full.html file="/2014/1/chinatown-1.jpg" alt="demo caption" height="500px" type="full" %}
+{% include image-full.html file="/2014/1/chinatown-2.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2014/1/chinatown-3.jpg" alt="demo caption" height="500px"  %}
+{% include image-full.html file="/2014/1/chinatown-5.jpg" alt="demo caption" height="500px"  %}
 ### The Brief
 Chinatown is Singapore’s largest historic district and one of the oldest in the world (Chinese community in Singapore was recorded since 1330). Singapore Chinatown does have its unique features.  Being a multi-racial and multi-cultural society since its founding, Singapore Chinatown is not the exclusive sphere of the ethnic Chinese but also includes Indians and Muslims with their Temples, Mosques, and Churches found alongside each other. Singapore Chinatown has evolved since then. 
 
