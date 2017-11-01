@@ -18,6 +18,7 @@
     @include flex(1);
     position: relative;
     margin-bottom:1em; 
+    height: 300px;
 }
 
 
@@ -26,9 +27,7 @@
 }
 
 @include middle-screen() {
-     .BannerContainer {
-        height: 300px;
-    }
+
 }
 
 @include medium-screen() {

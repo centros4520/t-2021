@@ -1,13 +1,19 @@
 ---
-layout: default
+layout: flexible
 ---
 <article class="project">
   <header class="post-header">
     <h1 class="section-title">{{ page.title | escape }}</h1>
   </header>
   <div class="post-content">
+   <div class="wrapper"> 
+  <p class="blurb">{{ page.blurb }}</p>  
    {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
+   </div>
   </div>
-  <div class="custom-divider"></div>
+  
+  <div class="wrapper">
+      <div class="custom-divider"></div>
   {% include collection-paginator.html %}
+ </div>
 </article>

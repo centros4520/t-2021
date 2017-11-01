@@ -1,13 +1,21 @@
-<!-- include image-full.html file="cover.jpg" alt="demo caption" width="300px"  -->
 {% assign imageurl = '/assets/images/' | append: include.file | prepend: site.baseurl %}
+{::nomarkdown}
+<!-- https://stackoverflow.com/questions/29053280/jekyll-markup-appearing-in-p-tag -->
+<!-- include image-full.html file="cover.jpg" alt="demo caption" width="300px"  -->
+{% if include.type %}
+</div><!-- End of Wrapper -->
+{% endif %}
 {% if include.caption %}<figure>
 <img src="{{ imageurl }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
 <figcaption>{{ include.caption }}</figcaption>
 </figure>
 {% else %}
-<div class="BannerContainer">
+<div class="BannerContainer" style="{% if include.height %}height:{{ include.height }}{% endif %}">
 <div class="BannerImage BannerImage--background" style="background-image: url(&quot;{{ imageurl }}&quot;);">
-<!-- <img src="{{ imageurl }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}  {% if include.height %} height="{{ include.height }}" {% endif %}/> -->
 </div>
 </div>
 {% endif %}
+{% if include.type %}
+<div class="wrapper">
+{% endif %}    
+{:/nomarkdown}
