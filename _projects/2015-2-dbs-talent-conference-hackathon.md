@@ -4,12 +4,10 @@ title: DBS Talent Conference Hackathon
 image_path: 
 orderid: 9
 date: 2015-02-25
+blurb: '“Joyful Banking”'
 ---
-“Joyful Banking”
-<!--more-->
-
 DBS Talent Conference Hackathon is the third DBS hackathon facilitated by data-challenge organiser, Ideatory and trainers from DBS to find new business opportunities or solve business challenges by applying Human-Centred Design or HCD. This includes mentorship by Top DBS executives including Chief Innovation Officer Neal Cross, Senior Vice President of Innovation Management David Beath, as well as the Head of Customer Journey Design in the bank Raju Nair.
-
+<!--more-->
 ### The Brief
 In 2014, McKinsey reported that digital banking has become an "irresistible business trend", especially in Asia where they are becoming more and more comfortable with using mobile and Internet channels for banking services. This shifting customers behavior and preferences signifies completely new challenges Banks need to address. It is estimated that the advent of digital banking will have 30 to 50 percent impact on Bank profits or losses. Therefore, it is critical for banks to create new and innovative digital customer propositions that could serve this emerging mobile and digitally-savvy customer segments.
 

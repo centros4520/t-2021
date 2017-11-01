@@ -4,12 +4,10 @@ title: Smart Nation API coLAB
 image_path: 
 orderid: 10
 date: 2015-03-15
+blurb: 'Discover and learn more than 100 APIs and hack out new API-enabled applications'
 ---
-Discover and learn more than 100 APIs and hack out new API-enabled applications
-<!--more-->
-
 Smart Nation API coLAB organised by Padang & Co, Accenture and Intel Mashery brought together key members in the API economy: government, corporates, startups and hackers to share use cases and explore opportunities in a variety of themes such as Smart Living, Transport, Travel & Places, and Fintech & Commerce. The coLAB offered easy access to more than 150 curated APIs from government and businesses in Singapore through a series of learning and hands-on events. The event culminates in a API Hack Day where tech and data enthusiasts rapidly prototype and showcase their ‘hacks’.
-
+<!--more-->
 ### The Brief
 [Accenture Technology Vision 2015](http://techtrends.accenture.com/us-en/digital-platform-ecosystems.html) reported advances in cloud, mobile platforms, and application development are eliminating the technological and cost barriers associated with digital industry platforms. This creates potential for disruptive growth, which includes the emergence of API Economy as "Digital glue and Secret Sauce" that can unlock business value and spurring innovation. 
 

@@ -4,12 +4,10 @@ title: NEA Clean & Green Hackathon 2014
 image_path: 
 orderid: 7
 date: 2014-11-14
+blurb: 'Generate new ideas to minimise food and plastic waste at home and to make our hawker centres "smarter".'
 ---
-Generate new ideas to minimise food and plastic waste at home and to make our hawker centres ‘smarter’.
-<!--more-->
-
 The Clean & Green Hackathon 2014 was the third hackathon organised by National Environment Agency (NEA) and UP Singapore to build solutions to address public health and environmental issues centred around Hawker Culture and Waste Minimisation. Around 100 tech enthusiasts and environmental advocates from total of 18 teams converged at the hackathon to develop prototype solutions that would minimise food and plastic waste and make Smart Hawker Centres.
-
+<!--more-->
 ### The Brief
 One of undesirable side effect of Singapore economy and population growth is the amount of waste generated. A total of 796,000 tonnes of food and 832,200 tonnes of plastic was wasted in 2013. Food waste itself has increased almost 45% from 10 years ago. The bulk of this food waste often comes from households, which might include purchasing food in excess of actual needs resulting in spoilt food, as well as poor storage and portion planning. Food waste leads to a waste of resources used in food production and has significant negative environmental, financial and social impacts. 
 

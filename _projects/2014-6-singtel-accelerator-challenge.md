@@ -4,12 +4,10 @@ title: SingTel Accelerator Challenge
 image_path: 
 orderid: 6
 date: 2014-08-25
+blurb: 'Access SingTel APIs and develop innovative apps or services around the two themes: Consumer Lifestyle and Internet of Things'
 ---
-Access SingTel APIs and develop innovative apps or services around the two themes: Consumer Lifestyle and Internet of Things.
-<!--more-->
-
 SingTel Accelerator Challenge 2014 aims to find the next big consumer lifestyle and internet of things apps for consumer using telco APIs such as  communication (SMS/MMS and location awareness) and payment (direct carrier billing and credit card services) features.This initiative is part of a larger group level collaboration between the SingTel Group and Samsung to increase smartphone penetration and the proliferation of mobile apps in their regional market. In total, the challenge received 40 submissions from 70 registered teams, 20 selected teams will refine their apps and pitches during  “Clinic Day” and top 10 teams will join the “Pitch Day” on 20 October to present to a panel of SingTel judges. 
-
+<!--more-->
 ### The Brief
 Launched on 25 August 2014, the SingTel Accelerator Challenge was an open invitation to startups and developers, who are building the next big app to partner with SingTel to take their apps to market in 2015. Participants are encouraged to leverage on SingTel’s new API platform – the Identity, Communication and Payments APIs. 
 

@@ -4,12 +4,10 @@ title: Smart Health coLAB
 image_path: 
 orderid: 11
 date: 2015-05-11
+blurb: 'Explore how data, tech and innovative services can drive healthy behaviours and prevent, slow or stop the progression of chronic diseases.'
 ---
-Explore how data, tech and innovative services can drive healthy behaviours and prevent, slow or stop the progression of chronic diseases.
-<!--more-->
-
 Smart Health coLAB organised by Padang & Co bring healthcare professionals, technologists, startups, data scientists, and community to explore new use cases and address changes in demographics and lifestyles, particularly in areas of rising concern such as obesity and chronic diseases, care for seniors, etc. The coLAB ended with the Smart Health Hack on Saturday (16 May 2015) with 11 different ideas pitched to the judges and the audience. The judging team consisted of Balaji Venkatesan (Zuellig Pharma), Julien de Salaberry (The Propell Group and Eddy Chan (Kimberly-Clark).
-
+<!--more-->
 ### The Brief
 Self-monitoring food intake using Food Journal is one of the most recommended tools to improve diet and weight loss. Recent years have seen significant food journal adoption using mobile apps which offers richer information and accessibility relative to traditional paper methods. 
 

@@ -4,12 +4,10 @@ title: Data Discovery Challenge
 image_path: 
 orderid: 8
 date: 2015-01-26
+blurb: 'Enable smarter enterprises and improve how we live, work, learn and interact in Singapore.'
 ---
-Enable smarter enterprises and improve how we live, work, learn and interact in Singapore.
-<!--more-->
-
 The Data Discovery Challenge was organised to look for innovative solutions to help open Singapore’s wealth of data and discover new insights! The Challenge sought to encourage the use of a wide range of private and public datasets to discover new value and benefits towards enabling smarter enterprises and improve how we live, work, learn and interact in Singapore.
-
+<!--more-->
 ### The Brief
 Exploring and getting around is an essential part of people’s behaviour in a city. We find the nearest drive-thru to satisfy our late night craving or hop on a bus to try the dessert that has been the talk of the town. While transport maps and timetables help people work out how to get from A to B using various forms of transport, they often do not help when you are not familiar with the area or do not know yet what journey you want to make. 
 

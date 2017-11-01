@@ -4,10 +4,8 @@ title: Smart Port Hackathon 2014
 image_path: 
 orderid: 5
 date: 2014-07-18
+blurb: 'Develop data-driven solutions to improve the efficiency, productivity and sustainability of Port of Singapore'
 ---
-Develop data-driven solutions to improve the efficiency, productivity and sustainability of Port of Singapore.
-<!--more-->
-
 Smart Port Hackathon 2014 is first maritime-themed hackathon organised by Maritime and Port Authority of Singapore (MPA) and Urban Prototyping (UP) Singapore community to develop innovative solutions to enhance productivity, efficiency and sustainability in the Port of Singapore. The inaugural hackathon saw a total of 120 participants from 25 teams, producing 25 original maritime-related prototypes in 48 hours using never been released datasets with 32 million data points representing different sectors of the maritime industry, such as vessel movement and position data, ship registries, cargo information, berthing schedules, container trucking data, bunkering transactions, hydrographic maps, air quality, tidal and weather information.
 
 <!--more-->
