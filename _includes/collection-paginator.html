@@ -30,8 +30,21 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 };
 </script>
 
-{% if prevurl %}<a href="{{prevurl}}" class="prev">&lArr; {{prevtitle}}</a>{% endif %}
+<!-- {% if prevurl %}<a href="{{prevurl}}" class="prev">&lArr; {{prevtitle}}</a>{% endif %}
 {% if prevurl and nexturl %} 	&bull; {% endif %}
-{% if nexturl %}<a href="{{nexturl}}" class="nxt">{{nexttitle}} &rArr;</a>{% endif %}
+{% if nexturl %}<a href="{{nexturl}}" class="nxt">{{nexttitle}} &rArr;</a>{% endif %} -->
 
+</div>
+
+<div class="paginator-project">
+    <div class="paginator-project-prev">
+    {% if prevurl %}
+    <a href="{{prevurl}}" class="prev Button">&lArr; {{prevtitle}}</a>
+    {% endif %} 
+    </div>
+    <div class="paginator-project-next">
+    {% if nexturl %}
+    <a href="{{nexturl}}" class="nxt Button">{{nexttitle}} &rArr;</a>
+    {% endif %}
+    </div>
 </div>

@@ -1,0 +1,55 @@
+//http://thesassway.com/intermediate/simple-grid-mixins
+// Make sure you have this in your styles
+// because grid is using paddings
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// This is mixin which you will include in parent
+// of columns. It kills default margin of inline-block
+// elements.
+@mixin row () {
+    font-size: 0;
+}
+
+// This is column mixins.
+@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+    width: 100%;
+    display: inline-block;
+    font-size: $base-font-size;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom:1em;
+    @media only screen and (min-width: 768px) {
+        width: percentage($col/$sum);
+        vertical-align: $align;
+        padding-left: if($first, 0, $gap);
+        padding-right: if($last, 0, $gap);
+    } 
+    //&.fluid { width: percentage($col/$sum); }
+}
+
+.paginator-project {
+    @include row;
+
+}
+
+.paginator-project {
+  .paginator-project-prev {
+        @include col(1, 2, $first: true);
+        @media only screen and (min-width: 768px) {
+          text-align: left;
+       }
+  }
+  .paginator-project-next {
+      @include col(1, 2, $last: true);
+      @media only screen and (min-width: 768px) {
+        text-align: right;
+     }
+    }
+}

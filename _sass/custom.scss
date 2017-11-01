@@ -1,6 +1,7 @@
 @charset "utf-8";
 // Import Mixin.
 @import "custom/mixin";
+@import "custom/mixin-grid";
 
 // Define defaults for each variable.
 $base-font-family1: 'Oswald',sans-serif !default;
@@ -178,6 +179,9 @@ Figure Caption
 https://stackoverflow.com/questions/8572952/border-length-smaller-than-div-width
 
 -------------------------------- */
+figure > img{
+  margin: 0 auto;
+}
 figcaption {
   font-size: 0.85em;
   text-align: center;
@@ -191,11 +195,11 @@ figcaption {
 figcaption:before {
   content: " ";
   position: absolute;
-  left: 25%;
+  left: 40%;
   top: 0;
   height: 1px;
-  width: 50%;
-  border-top: 2px solid $grey-color-dark;
+  width: 20%;
+  border-top: 5px solid $grey-color-light;
 }
 
 /* -------------------------------- 
@@ -380,5 +384,6 @@ Footer
   "custom/homepage-featured",
   "custom/homepage-til",
   "custom/project-list",
+  "custom/project-featured",
   "code/monokai.sublime"
 ;

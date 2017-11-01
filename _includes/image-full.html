@@ -1,0 +1,13 @@
+<!-- include image-full.html file="cover.jpg" alt="demo caption" width="300px"  -->
+{% assign imageurl = '/assets/images/' | append: include.file | prepend: site.baseurl %}
+{% if include.caption %}<figure>
+<img src="{{ imageurl }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+<figcaption>{{ include.caption }}</figcaption>
+</figure>
+{% else %}
+<div class="BannerContainer">
+<div class="BannerImage BannerImage--background" style="background-image: url(&quot;{{ imageurl }}&quot;);">
+<!-- <img src="{{ imageurl }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}  {% if include.height %} height="{{ include.height }}" {% endif %}/> -->
+</div>
+</div>
+{% endif %}
