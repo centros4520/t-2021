@@ -212,6 +212,10 @@ Content
   line-height: 1.1em;
   margin: 1.2em 0;
 }
+.sublead{
+  font-size: 1.25em;
+  line-height: 1.3em;
+}
 .project {
   margin-bottom: 20px;
 }
@@ -236,8 +240,10 @@ h2.note__title {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: bold;
-  border-top: 2px solid $grey-color-dark;
+  border-top: 5px solid $grey-color-dark;
   display: inline-block;
+  width: 30%;
+  min-width: 200px;
 }
 
 .project-list li,
