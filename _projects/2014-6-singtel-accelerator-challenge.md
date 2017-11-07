@@ -20,6 +20,7 @@ In 2009, McKinsey research reveals that more than half the world’s adults do n
 
 ### Idea: PeerPledge
 *Private fundraising on-the-go* 
+{% include image-full.html file="/2014/6/screenshots-app.png" alt="App Demo" height="350px" %}
 {% include image-full.html file="/2014/6/singtel-2.jpg" alt="Presentation" height="500px" %}
 We focused our solution to solve difficulties in personal fundraising which involve convincing people to invest on the cause as well as collecting, tracking and managing payment process. We proposed *PeerPledge* mobile app to simplify raising money for any situations. It provides a hassle free way to raise and pledge fund anytime, anywhere, within the privacy of your social connections, offering 3 key value propositions:  
 

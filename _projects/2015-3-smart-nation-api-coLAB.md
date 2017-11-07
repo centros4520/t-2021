@@ -17,7 +17,7 @@ At the same time, the [Smart Nation initiative](https://www.ida.gov.sg/About-Us/
 
 ### Idea: Project Chatty
 *SMS-based Smart Assistant for Inclusive Society*
-
+{% include image-full.html file="/2015/3/screenshots-app.png" alt="App Demo" height="350px" %}
 We learned that more often than not existing Smart Nation solutions require Internet access. Unfortunately, this may exclude people who do not have access to Internet or Smartphone technology. IDA (Singapore Infocomm Development Authority) Infocomm Usage for Households and Individuals Survey 2013 highlighted [13% of Singapore population do not have access to Computer and Internet](http://www.ida.gov.sg/Infocomm-Landscape/Facts-and-Figures). 
 
 Meanwhile, subscription to mobile broadband services [falls drastically as the age of the respondents increased](http://www.ida.gov.sg/~/media/Files/Infocomm%20Landscape/Facts%20and%20Figures/SurveyReport/2014/IDA%20CASS%202014.pdf) from 80%  for those aged 18-39 years old to only 25% for those 60 years and above. As such, our goal is to make it possible for people without Internet and Smartphone to access and benefit from Smart Nation platform capabilities. 

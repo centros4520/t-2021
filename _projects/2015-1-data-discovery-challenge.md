@@ -37,7 +37,7 @@ This is where there is a need to analyse and understand quickly and easily place
 
 ### Idea: Project Venn
 *Intersection of space and time.*
-
+{% include image-full.html file="/2015/1/screenshots-app.png" alt="App Demo" height="350px" %}
 We created *Venn* as a web-based application travel time maps also known as isochrones geographical reachability maps to solve above urban exploration and resource coordination issues.
 
 Isochrone maps (greek: iso = equal, chronos = time) are line connecting points that have the same travel time from a specified location, i.e. which can be reached within the specified time or less. Using colours and contour lines they show constraint on how long it takes to travel between one particular place and every other place in the area using chosen mode of transport. Our interactive isochrone map visualization allows people to select areas of interest, or explore temporal mobility patterns based on modes of transport, travel time and other preferences.

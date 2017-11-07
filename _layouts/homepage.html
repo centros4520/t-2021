@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+
+    {% include header-fullscreen.html %}
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+             <div class="jumbotron">
+                    <div class="container">
+                        <div class="intro">
+                            <p class="intro__pre">Howdy!</p>
+                            <p class="intro__main">My name is <span>{{ site.name }}</span>, a {{ site.job }} who loves all things {{ site.languages
+                                }}.</p>
+                            <p style="font-size:1.4em"> I recently works on project called "Project Name". This is about some project description with
+                                clear value proposition for the customer.</p>
+                            <p class="intro__post">{{ site.location }}</p>
+                        </div>
+                    </div>
+                </div>
+        </div><!--End of Wrapper -->
+        <div class="wrapper">
+            <div class="container">
+                    {% include featured-projects-list.html %}
+            </div>
+        </div><!--End of Wrapper -->
+        
+    </main>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

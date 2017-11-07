@@ -6,6 +6,7 @@ orderid: 2
 date: 2014-04-05
 blurb: "Co-develop solutions to empower persons with disabilities as consumers, employees and entrepreneurs."
 ---
+{% include image-full.html file="/2014/2/enable-3.jpg" alt="Seed Round Group Photo" height="500px" type="full" %}
 Enabling Community coLAB was a 2 day social innovation hackathon organised by the Ministry of Social and Family Development(MSF), SG Enable and UP Singapore. More than 100 participants came together over the weekend of 5-6 April 2014 to create solutions to empower persons with disabilities as consumers, employees and entrepreneurs. 
 <!--more-->
 ### The Brief
@@ -19,11 +20,13 @@ Approximately 3% of Singaporeans are living with a disability. Unfortunately, la
 
 ### Idea: SwipeTap
 *Improve ability of those with dexterity, physical and visual disability to type on small, mobile devices*
+{% include image-full.html file="/2014/2/screenshots-app.png" alt="App Demo" height="350px" %}
+{% include image-full.html file="/2014/2/screenshots-app2.png" alt="App Demo" height="350px" %}
+{% include image-full.html file="/2014/2/screenshots-app3.png" alt="App Demo" height="350px" %}
 
-{% include image-full.html file="/2014/2/enable-3.jpg" alt="Seed Round Group Photo" height="500px" type="full" %}
+Our inspiration comes from the awareness that people with disabilities are increasingly relying on their mobile for communication, working and entertainment. Despite significant improvement in making mobile technology accessible, we observed their difficulty and frustation to get through some of the basic actions, including typing to communicate their thoughts and ideas.
+
 {% include image-full.html file="/2014/2/enable-1.jpg" alt="Team" height="500px"  %}
-
-Our inspiration comes from the awareness that people with disabilities are increasingly relying on their mobile for communication, working and entertainment. Despite significant improvement in making mobile technology accessible, we observed their difficulty and frustation to get through some of the basic actions, including typing to communicate their thoughts and ideas. 
 
 In order to empower them, we would like to improve typing user experience on small devices for those with visual, dexterity and physical disabilities. Our solution provides bigger interaction area which minimize gesture movement accuracy and precision needed to type. We also provides audio feedback and word recommendation to improve their typing efficiency. 
 

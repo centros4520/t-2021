@@ -93,18 +93,20 @@
       border-color: transparent;
     }
   }
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(97, 46, 118, 0.9), rgba(88, 103, 204, 0.9)), linear-gradient(177deg, rgba(97, 46, 118, 0), rgba(97, 46, 118, 0.9)), url("") center (center / cover), #612e76;
+ //background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(97, 46, 118, 0.9), rgba(88, 103, 204, 0.9)), linear-gradient(177deg, rgba(97, 46, 118, 0), rgba(97, 46, 118, 0.9)), url("") center (center / cover), #612e76;
   &:hover, &:focus {
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(100, 47, 122, 0.9), rgba(92, 107, 205, 0.9)), linear-gradient(177deg, rgba(97, 46, 118, 0), rgba(97, 46, 118, 0.9)), url("") center (center / cover), #612e76;
+  // background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(100, 47, 122, 0.9), rgba(92, 107, 205, 0.9)), linear-gradient(177deg, rgba(97, 46, 118, 0), rgba(97, 46, 118, 0.9)), url("") center (center / cover), #612e76;
   }
   .excerpt, .heading {
     color: #d8cbdd;
   }
    &.-v5 {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(23, 40, 58, 0.85), rgba(37, 41, 94, 0.85)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
+    //background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(23, 40, 58, 0.85), rgba(37, 41, 94, 0.85)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
+     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(23, 40, 58, 0.55), rgba(37, 41, 94, 0.55)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
     &:hover, &:focus {
-      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(24, 43, 62, 0.85), rgba(38, 43, 98, 0.85)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
+      //background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(24, 43, 62, 0.85), rgba(38, 43, 98, 0.85)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='10' version='1.1'><polyline fill='white' points='1500,0 0,0 0,10'/></svg>") -50px (top / 110%) auto no-repeat, linear-gradient(to right, rgba(23, 40, 58, 0.85), rgba(37, 41, 94, 0.85)), linear-gradient(1deg, rgba(23, 40, 58, 0), rgba(23, 40, 58, 0.9)), url("/assets/images/cover.jpg") center (center / cover), #17283a;
     }
     .excerpt, .heading {
       color: #c5c9ce;
