@@ -6,7 +6,8 @@ orderid: 3
 date: 2014-05-07
 blurb: 'Crowdfund unique assistive technology product'
 ---
-Startup Asia was 2-day conference organised by Tech in Asia, Asia’s largest English-language technology and startup blog. A 24-hour hackathon was simultaneously running with over 85 developers, 32 teams and 13 sponsored challenges to build products with APIs and SDKs from partner companies, such as Starhub for their upcoming reward-based crowdfunding platform, Crowdtivate. Three overall champions out of 14 finalists was selected during final round on May 17. 
+<p class='sublead'>Startup Asia was 2-day conference organised by Tech in Asia, Asia’s largest English-language technology and startup blog.</p>
+ A 24-hour hackathon was simultaneously running with over 85 developers, 32 teams and 13 sponsored challenges to build products using partner companies' APIs and SDKs. Three overall champions out of 14 finalists was selected during final round on May 17.
 {% include image-full.html file="/2014/3/start-1.jpg" alt="Hackathon Participants" height="500px"  %}
 
 <!--more-->

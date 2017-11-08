@@ -7,7 +7,9 @@ date: 2014-04-05
 blurb: "Co-develop solutions to empower persons with disabilities as consumers, employees and entrepreneurs."
 ---
 {% include image-full.html file="/2014/2/enable-3.jpg" alt="Seed Round Group Photo" height="500px" type="full" %}
-Enabling Community coLAB was a 2 day social innovation hackathon organised by the Ministry of Social and Family Development(MSF), SG Enable and UP Singapore. More than 100 participants came together over the weekend of 5-6 April 2014 to create solutions to empower persons with disabilities as consumers, employees and entrepreneurs. 
+<p class='sublead'>Enabling Community coLAB was a 2 day social innovation hackathon organised by the Ministry of Social and Family Development(MSF), SG Enable and UP Singapore.</p>
+
+More than 100 participants came together over the weekend of 5-6 April 2014 to create solutions to empower persons with disabilities as consumers, employees and entrepreneurs.
 <!--more-->
 ### The Brief
 Approximately 3% of Singaporeans are living with a disability. Unfortunately, lack of understanding and engagement from the wider community often act as a barrier to enable them work, play, shop, and to be part of the community, making a contribution to their families and the society. Enabling Community coLAB aims to address the challenge of empowering people with disabilities as consumers, employees and/or entrepreneurs. 
@@ -33,3 +35,6 @@ In order to empower them, we would like to improve typing user experience on sma
 ### Result
 {% include image-full.html file="/2014/2/enable-4.jpg" alt="Final Group Photo" height="500px"  %}
 We are encouraged with support and feedback given by mentors from SGEnable, Social Enterprise Singapore, as well as Singapore Society of Physically Disabled. Our idea was shortlisted as the Top 10 finalists and received Seed award to further refine and validate our proposed solution.
+
+<iframe src="//player.vimeo.com/video/97495834?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Highlight Reel from <a href="http://www.upsingapore.com/events/enabling-community-colab/">UP Singapore</a>.</p>

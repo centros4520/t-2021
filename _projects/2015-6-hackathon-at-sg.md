@@ -25,3 +25,6 @@ As one of the challenge sponsors, Singapore Land Authority (SLA) is seeking a ge
 {% include image-full.html file="/2015/6/screenshots-app2.png" alt="App Demo" height="350px" %}
 {% include image-full.html file="/2015/6/hack-2.jpg" alt="Participant" height="400px"  %}
 Using SMS as Communication Platform, GrabHelp locates and connects those who needs help with nearby community of volunteers in near real-time. We simplify the process of requesting help via SMS just by using name, needs and location keyword. GrabHelp will then find available and notify nearby volunteers for acknowledgement. Upon consent from both parties, relevant contact details is then revealed. 
+
+<iframe  src="//www.youtube.com/embed/B1irTYPcD64?rel=0&amp;showinfo=0" frameborder="0"  width="640" height="360"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Highlight Reel from <a href="http://www.upsingapore.com/events/hackathonsg/">UP Singapore</a>.</p>

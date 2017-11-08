@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <div class="footer-heading">&nbsp;</div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
@@ -14,8 +14,8 @@
               {{ site.title | escape }}
             {% endif %}
             </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% if site.email_address %}
+            <li><a href="mailto:{{ site.email_address }}">{{ site.email_address }}</a></li>
             {% endif %}
              {% if site.github_username %}
             <li>

@@ -7,7 +7,9 @@ date: 2014-07-18
 blurb: 'Develop data-driven solutions to improve the efficiency, productivity and sustainability of Port of Singapore'
 ---
 {% include image-full.html file="/2014/5/port-1.jpg" alt="Audience" height="400px" type="full" %}
-Smart Port Hackathon 2014 is first maritime-themed hackathon organised by Maritime and Port Authority of Singapore (MPA) and Urban Prototyping (UP) Singapore community to develop innovative solutions to enhance productivity, efficiency and sustainability in the Port of Singapore. The inaugural hackathon saw a total of 120 participants from 25 teams, producing 25 original maritime-related prototypes in 48 hours using never been released datasets with 32 million data points representing different sectors of the maritime industry, such as vessel movement and position data, ship registries, cargo information, berthing schedules, container trucking data, bunkering transactions, hydrographic maps, air quality, tidal and weather information.
+<p class='sublead'>Smart Port Hackathon 2014 is first maritime-themed hackathon organised by Maritime and Port Authority of Singapore (MPA) and Urban Prototyping (UP) Singapore community to develop innovative solutions to enhance productivity, efficiency and sustainability in the Port of Singapore. </p>
+
+The inaugural hackathon saw a total of 120 participants from 25 teams, producing 25 original maritime-related prototypes in 48 hours using never been released datasets with 32 million data points representing different sectors of the maritime industry, such as vessel movement and position data, ship registries, cargo information, berthing schedules, container trucking data, bunkering transactions, hydrographic maps, air quality, tidal and weather information.
 
 <!--more-->
 ### The Brief
@@ -45,3 +47,6 @@ With guidance from Subject Matter Expert from MPA and PSA, we presented our idea
 
 Our interactive dashboard was awarded "Honourable mention" prize.
 
+<iframe src="//player.vimeo.com/video/101695032?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/105639645?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation and Highlight Reel from <a href="http://www.upsingapore.com/events/smart-port-hackathon-2014/">UP Singapore</a>.</p>

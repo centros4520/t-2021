@@ -7,7 +7,8 @@ date: 2015-02-25
 blurb: '“Joyful Banking”'
 ---
 {% include image-full.html file="/2015/2/dbs-1.jpg" alt="Group Discussion" height="400px" type="full"  %}
-DBS Talent Conference Hackathon is the third DBS hackathon facilitated by data-challenge organiser, Ideatory and trainers from DBS to find new business opportunities or solve business challenges by applying Human-Centred Design or HCD. This includes mentorship by Top DBS executives including Chief Innovation Officer Neal Cross, Senior Vice President of Innovation Management David Beath, as well as the Head of Customer Journey Design in the bank Raju Nair.
+<p class='sublead'>DBS Talent Conference Hackathon is the third DBS hackathon facilitated by data-challenge organiser, Ideatory and trainers from DBS to find new business opportunities or solve business challenges by applying Human-Centred Design or HCD.</p> 
+This includes mentorship by Top DBS executives including Chief Innovation Officer Neal Cross, Senior Vice President of Innovation Management David Beath, as well as the Head of Customer Journey Design in the bank Raju Nair.
 <!--more-->
 
 ### The Brief

@@ -7,7 +7,9 @@ date: 2014-11-14
 blurb: 'Generate new ideas to minimise food and plastic waste at home and to make our hawker centres "smarter".'
 ---
 {% include image-full.html file="/2014/7/nea-4.jpg" alt="Group Photo" height="500px" type="full"  %}
-The Clean & Green Hackathon 2014 was the third hackathon organised by National Environment Agency (NEA) and UP Singapore to build solutions to address public health and environmental issues centred around Hawker Culture and Waste Minimisation. Around 100 tech enthusiasts and environmental advocates from total of 18 teams converged at the hackathon to develop prototype solutions that would minimise food and plastic waste and make Smart Hawker Centres.
+<p class='sublead'>The Clean &amp; Green Hackathon 2014 was the third hackathon organised by National Environment Agency (NEA) and UP Singapore to build solutions to address public health and environmental issues centred around Hawker Culture and Waste Minimisation.</p> 
+
+Around 100 tech enthusiasts and environmental advocates from total of 18 teams converged at the hackathon to develop prototype solutions that would minimise food and plastic waste and make Smart Hawker Centres.
 <!--more-->
 
 ### The Brief
@@ -47,3 +49,6 @@ We received valuable mentorship from Joseph Tay (Sustainability Consultant at Ka
 We were awarded Tied 2nd Runner Up and Best Tech prize.
 
 
+<iframe src="//player.vimeo.com/video/112253190?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/131054092?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation and Highlight Reel from <a href="http://www.upsingapore.com/events/clean-green-hackathon-2014/">UP Singapore</a>.</p>

@@ -6,7 +6,8 @@ orderid: 6
 date: 2014-08-25
 blurb: 'Access SingTel APIs and develop innovative apps or services around the two themes: Consumer Lifestyle and Internet of Things'
 ---
-SingTel Accelerator Challenge 2014 aims to find the next big consumer lifestyle and internet of things apps for consumer using telco APIs such as  communication (SMS/MMS and location awareness) and payment (direct carrier billing and credit card services) features.This initiative is part of a larger group level collaboration between the SingTel Group and Samsung to increase smartphone penetration and the proliferation of mobile apps in their regional market. In total, the challenge received 40 submissions from 70 registered teams, 20 selected teams will refine their apps and pitches during  “Clinic Day” and top 10 teams will join the “Pitch Day” on 20 October to present to a panel of SingTel judges. 
+<p class='sublead'>SingTel Accelerator Challenge 2014 aims to find the next big consumer lifestyle and internet of things apps for consumer using telco APIs such as  communication (SMS/MMS and location awareness) and payment (direct carrier billing and credit card services) features.</p>
+This initiative is part of a larger group level collaboration between the SingTel Group and Samsung to increase smartphone penetration and the proliferation of mobile apps in their regional market. In total, the challenge received 40 submissions from 70 registered teams, 20 selected teams will refine their apps and pitches during  “Clinic Day” and top 10 teams will join the “Pitch Day” on 20 October to present to a panel of SingTel judges. 
 <!--more-->
 {% include image-full.html file="/2014/6/singtel-1.jpg" alt="Audience" height="500px" %}
 
@@ -46,3 +47,5 @@ We received valuable mentorship from SingTel API, Marketing and Business develop
   * Edgar Hardless, CEO, SingTel Innov8
   * Donovan Kik, Director Post-paid Marketing, Consumer Marketing
 
+<iframe src="//player.vimeo.com/video/110753582?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation Reel from <a href="http://www.upsingapore.com/events/singtel-accelerator-challenge/">UP Singapore</a>.</p>

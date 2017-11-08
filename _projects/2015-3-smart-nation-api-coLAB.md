@@ -31,4 +31,7 @@ We also developed other use cases such as finding daily essentials (e.g. AXS mac
 In this project, we used Address and Public Transport API from SLA OneMap, AXS, Singapore Memory Project from NLB as well as Nokia HERE Map REST API to detect nearby locations. Our idea was selected as Best Use of Government Data (API), Best Use of Smart Living API and Best in Show. 
 
 
+<iframe src="//player.vimeo.com/video/123052189?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/124786737?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation and Highlight Reel from <a href="http://www.upsingapore.com/events/smart-nation-api-colab/">UP Singapore</a>.</p>
 

@@ -7,7 +7,9 @@ date: 2014-03-28
 blurb: "Prototype solutions to improve Chinatown’s visitor experience"
 ---
 {% include image-full.html file="/2014/1/chinatown-1.jpg" alt="Exploring Chinatown" height="500px" type="full" %}
-The Chinatown coLAB 2014 was a 3 day hackathon organised by the Singapore Tourism Board with UP Singapore to design and prototype solutions to improve Chinatown’s visitors experience. More than 120 participants came together over 28th-30th March 2014 to design and prototype tech solutions which bring to life Chinatown’s heritage and stories of its community and businesses.
+<p class='sublead'>The Chinatown coLAB 2014 was a 3 day hackathon organised by the Singapore Tourism Board with UP Singapore to design and prototype solutions to improve Chinatown’s visitors experience. </p>
+
+More than 120 participants came together over 28th-30th March 2014 to design and prototype tech solutions which bring to life Chinatown’s heritage and stories of its community and businesses.
 <!--more-->
 
 ### The Brief
@@ -43,3 +45,8 @@ In addition, our app allows visitor to leave feedback (or token of appreciation)
 
 {% include image-full.html file="/2014/1/chinatown-5.jpg" alt="Award" height="500px"  %}
 Our application was awarded "2nd Runner Up" prize. 
+
+
+<iframe src="//player.vimeo.com/video/93330438?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/92914172?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation and Highlight Reel from <a href="http://www.upsingapore.com/events/chinatown-colab/">UP Singapore</a>.</p>

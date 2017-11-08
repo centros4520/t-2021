@@ -6,7 +6,7 @@ orderid: 11
 date: 2015-05-11
 blurb: 'Explore how data, tech and innovative services can drive healthy behaviours and prevent, slow or stop the progression of chronic diseases.'
 ---
-Smart Health coLAB organised by Padang & Co bring healthcare professionals, technologists, startups, data scientists, and community to explore new use cases and address changes in demographics and lifestyles, particularly in areas of rising concern such as obesity and chronic diseases, care for seniors, etc. The coLAB ended with the Smart Health Hack on Saturday (16 May 2015) with 11 different ideas pitched to the judges and the audience. The judging team consisted of Balaji Venkatesan (Zuellig Pharma), Julien de Salaberry (The Propell Group and Eddy Chan (Kimberly-Clark).
+<p class='sublead'>Smart Health coLAB organised by Padang &amp; Co bring healthcare professionals, technologists, startups, data scientists, and community to explore new use cases and address changes in demographics and lifestyles, particularly in areas of rising concern such as obesity and chronic diseases, and care for seniors.</p> The coLAB ended with the Smart Health Hack on Saturday (16 May 2015) with 11 different ideas pitched to the judges and the audience. The judging team consisted of Balaji Venkatesan (Zuellig Pharma), Julien de Salaberry (The Propell Group and Eddy Chan (Kimberly-Clark).
 <!--more-->
 {% include image-full.html file="/2015/4/health-1.jpg" alt="Workshop" height="400px"  %}
 
@@ -33,5 +33,7 @@ We propose a blended food journaling system which bring journaling activities in
 {% include image-full.html file="/2015/4/health-4.jpg" alt="Award" height="400px"  %}
 Project Stickers was awarded Zuellig Pharma Switch Challenge Prize.
 
-
+<iframe src="//player.vimeo.com/video/144329143?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/129180437?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation and Highlight Reel from <a href="http://www.upsingapore.com/events/smart-health-colab/">UP Singapore</a>.</p>
 

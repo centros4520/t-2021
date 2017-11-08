@@ -24,5 +24,5 @@ We created system that uses Blockchain technology to keep track of users’ eco-
 {% include image-full.html file="/2015/5/nea-2.jpg" alt="Award" height="400px"  %}
 Project Baggins was awarded Best Technology Prize.
 
-
-
+<iframe src="//player.vimeo.com/video/132393180?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>Presentation Reel from <a href="http://www.upsingapore.com/events/clean-green-hackathon-2015/">UP Singapore</a>.</p>

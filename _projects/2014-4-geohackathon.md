@@ -6,7 +6,9 @@ orderid: 4
 date: 2014-06-06
 blurb: 'Use geospatial technologies to address urban systems, demographic and environmental challenges'
 ---
-GeoHackathon was a competition organised by the Singapore Land Authority (SLA) in partnership with UP Singapore to explore new and innovative ways to use mapping and geospatial technology. About 26 teams of 140 people from diverse communities and backgrounds came together from 6 to 8 June to address problems in society highlighted in special challenges from Non-Government Organizations and Voluntary Welfare Organisations, such as Food from the Heart, who are seeking app that helps the hotline operator alert volunteers to manage their volunteers assignment based on their availability and locations.
+<p class='sublead'>GeoHackathon was a competition organised by the Singapore Land Authority (SLA) in partnership with UP Singapore to explore new and innovative ways to use mapping and geospatial technology. </p>
+
+About 26 teams of 140 people from diverse communities and backgrounds came together from 6 to 8 June to address problems in society. This includes special challenges highlighted by Non-Government Organizations and Voluntary Welfare Organisations, such as Food from the Heart, who are seeking app that helps the hotline operator alert volunteers to manage their volunteers assignment based on their availability and locations.
 {% include image-full.html file="/2014/4/geo-1.jpg" alt="Presentation" height="500px"  %}
 <!--more-->
 ### The Brief
