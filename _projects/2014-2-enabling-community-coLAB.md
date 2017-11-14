@@ -4,7 +4,7 @@ title: Enabling Community coLAB 2014
 image_path: 
 orderid: 2
 date: 2014-04-05
-blurb: "Co-develop solutions to empower persons with disabilities as consumers, employees and entrepreneurs."
+blurb: "Empower persons with disabilities as consumers, employees and entrepreneurs with technology"
 ---
 {% include image-full.html file="/2014/2/enable-3.jpg" alt="Seed Round Group Photo" height="500px" type="full" %}
 <p class='sublead'>Enabling Community coLAB was a 2 day social innovation hackathon organised by the Ministry of Social and Family Development(MSF), SG Enable and UP Singapore.</p>

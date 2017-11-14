@@ -4,7 +4,7 @@ title: HDB Cool Ideas Hack
 image_path: 
 orderid: 18
 date: 2016-06-24
-blurb: 'Help build better ties with our neighbours, enhance access to relevant and useful information, and make our homes and living environment more sustainable.'
+blurb: 'Help build better ties with our neighbours, enhance access to relevant information, and make our homes and living environment more sustainable.'
 ---
 {% include image-full.html file="/2016/3/hdb-2.jpg" alt="demo caption" height="380px" type="full" %}
 <p class='sublead'>The inaugural HDB Cool Ideas Hack challenged participants to create technology-enabled solutions which would foster neighbourly ties, share relevant information quickly and easily or make HDB living greener as a community.</p>

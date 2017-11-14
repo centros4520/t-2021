@@ -4,7 +4,7 @@ title: DBS Talent Conference Hackathon
 image_path: 
 orderid: 9
 date: 2015-02-25
-blurb: '“Joyful Banking”'
+blurb: 'Co-create solution to engage customers and bring “Joyful Banking”'
 ---
 {% include image-full.html file="/2015/2/dbs-1.jpg" alt="Group Discussion" height="400px" type="full"  %}
 <p class='sublead'>DBS Talent Conference Hackathon is the third DBS hackathon facilitated by data-challenge organiser, Ideatory and trainers from DBS to find new business opportunities or solve business challenges by applying Human-Centred Design or HCD.</p> 

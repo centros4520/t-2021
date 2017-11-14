@@ -4,13 +4,12 @@ title: Data Discovery Challenge
 image_path: 
 orderid: 8
 date: 2015-01-26
-blurb: 'Driving Innovation and Enabling Smart Nation through Open Data'
+blurb: 'Create Mashups for Driving Innovation and Enabling Smart Nation through Open Data'
 ---
 <p class='sublead'>The Data Discovery Challenge is organised by IDA to support Singapore's vision to be the world’s first Smart Nation where data and analytics will play a critical role. The challenge seeks to encourage innovative mashup of public and private datasets to generate new value, enable smarter enterprises and improve how we live, work, learn and interact.</p>
 <!--more-->
 ### The Brief
-The Infocomm Development Authority of Singapore (IDA) launched the Data Discovery Challenge as the first competition to utilize a federated dataset discovery mechanism i.e. Federated Dataset Registry (FDSR). The registry was launched as part of the Data-as-a-Service pilot in October 2014 which seeks to address
-the challenge of discovering datasets in the private sector. Through the Data Discovery Challenge, IDA aims to raise awareness to enterprises on the benefits of pooling and making available private datasets to bring new insights and values. 
+The Infocomm Development Authority of Singapore (IDA) launched the Data Discovery Challenge as the first competition to utilize a federated dataset discovery mechanism i.e. Federated Dataset Registry (FDSR). The registry was launched as part of the Data-as-a-Service pilot in October 2014 which seeks to address the challenge of discovering datasets in the private sector. Through the Data Discovery Challenge, IDA aims to raise awareness to enterprises on the benefits of pooling and making available private datasets to bring new insights and values. 
 
 In this challenge, participants are required to use dataset(s) from IDA’s FDSR and integrate it with any public or private datasets to develop workable prototype data visualisation, mobile or web applications. The submission to this challenge should be a workable prototype data visualisation, mobile or web applications that can:
   * Increase efficiency or productivity of an enterprise or an industry vertical;

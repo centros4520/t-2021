@@ -4,7 +4,7 @@ title: NEA Clean & Green Hackathon 2014
 image_path: 
 orderid: 7
 date: 2014-11-14
-blurb: 'Generate new ideas to minimise food and plastic waste at home and to make our hawker centres "smarter".'
+blurb: 'Generate new ideas to minimise food &amp; plastic waste at home and make our hawker centres "smarter".'
 ---
 {% include image-full.html file="/2014/7/nea-4.jpg" alt="Group Photo" height="500px" type="full"  %}
 <p class='sublead'>The Clean &amp; Green Hackathon 2014 was the third hackathon organised by National Environment Agency (NEA) and UP Singapore to build solutions to address public health and environmental issues centred around Hawker Culture and Waste Minimisation.</p> 

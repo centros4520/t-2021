@@ -4,15 +4,14 @@ title: Human Centered Design with IDEO
 image_path: 
 orderid: 17
 date: 2016-04-16
-blurb: '“How might we...(Migrant Worker Design Challenge)“'
+blurb: 'Discover insights and ideate activities for Migrant Workers'
 ---
 {% include image-full.html file="/2016/2/ideo-0.jpg" alt="demo caption" height="400px" type="full"%}
 This is an experiential human-centered design workshop organized by Singapore+Acumen, IDEO Singapore, Migrant Workers’ Centre and Lien Centre for Social Innovation. Using processes and tools developed by IDEO.org, participants collaborate to address design challenge around South Asian migrant workers by learning how to interview, understand their needs, gather inspiration, ideate, and create a quick prototype.
 <!--more-->
 
 ### Context Discovery
-Human-centered design (HCD) is a creative approach to problem solving pioneered by the design firm IDEO to design delightful products and experiences that people love. According to their Field Guide to Human-Centered Design - “When you understand the people you’re trying to reach—and then design from their perspective—not only will you arrive at unexpected answers, but you’ll come up with ideas that they’ll embrace.” Being a human-centered designer is about believing that as
-long as you stay grounded in what you’ve learned from people, your team can arrive at new solutions that the world needs. This is the central philosophy that human-centered design revolves around. 
+Human-centered design (HCD) is a creative approach to problem solving pioneered by the design firm IDEO to design delightful products and experiences that people love. According to their Field Guide to Human-Centered Design - “When you understand the people you’re trying to reach—and then design from their perspective—not only will you arrive at unexpected answers, but you’ll come up with ideas that they’ll embrace.” Being a human-centered designer is about believing that as long as you stay grounded in what you’ve learned from people, your team can arrive at new solutions that the world needs. This is the central philosophy that human-centered design revolves around. 
 
  * **Phase 1: Observation**
    

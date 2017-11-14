@@ -4,7 +4,7 @@ title: SIA App Challenge
 image_path: 
 orderid: 23
 date: 2017-10-21
-blurb: 'How can airline track serviceware items and optimise their inventory to minimize wastage?'
+blurb: 'Develop solution for Airline to minimise wastage by tracking and optimising serviceware inventory'
 ---
 {% include image-full.html file="/2017/4/sia-1.jpg" alt="SIA AppChallenge Participants" height="450px" type="full"%}
 <p class='sublead'>The 3rd SIA App Challenge is a coding competition which require participants to build an application that would solve actual airline customer and operational business challenges. Based on theme “Be Part of SIA’s Digital Transformation”, over 80 teams took part in the Open and Student Category to create fresh solutions.</p> 

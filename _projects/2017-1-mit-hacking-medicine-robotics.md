@@ -4,7 +4,7 @@ title: MIT Hacking Medicine Robotics
 image_path: 
 orderid: 20
 date: 2017-02-10
-blurb: 'Explore robotics challenges and opportunities in elder care in response to aging populations around the world.'
+blurb: 'Explore robotics opportunities for eldercare in response to aging populations around the world.'
 ---
 <p class='sublead'>MIT Hacking Medicine Robotics Singapore 2017 is Asia’s first hackathon to address unmet needs in elderly care and medicine and explore how robotics can play a role in aiding an aging society.</p>
 
