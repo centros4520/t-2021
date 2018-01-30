@@ -119,11 +119,12 @@ Section Heading
 -------------------------------- */
 .section-title {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin-bottom: ($spacer * 2);
   text-align: center;
   position: relative;
-  @include relative-font-size(2);
+  @include relative-font-size(2.5);
+  line-height: 1.2em;
   &:after {
     content: '';
     position: absolute;
@@ -211,13 +212,23 @@ Content
 
 -------------------------------- */
 .blurb{
-  font-size:2em;
-  line-height: 1.1em;
+  font-size:1.6em;
+  line-height: 1.2em;
   margin: 1.2em 0;
 }
 .sublead{
   font-size: 1.25em;
   line-height: 1.3em;
+  color:$custom-brand-color-primary;
+  display: inline;
+  background: $custom-brand-color-primary;
+  color: #fff;
+  box-shadow: 10px 0 0 $custom-brand-color-primary, -10px 0 0 $custom-brand-color-primary;
+  &:after {
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 .project {
   margin-bottom: 20px;
@@ -240,13 +251,13 @@ h2.note__title {
 
 .project__year,
 .note__year {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
   border-top: 5px solid $grey-color-dark;
   display: inline-block;
-  width: 30%;
-  min-width: 200px;
+  width: 10%;
+  min-width: 120px;
 }
 
 .project-list li,
@@ -266,13 +277,21 @@ ul.note-list li:last-child {
 }
 
 .note-meta {
-  font-size: 0.85rem;
+  font-size: 0.85em;
   font-weight: normal;
+  color:  $grey-color;
+  font-family: $base-font-family1;
+  text-transform: uppercase
 }
 
 @include min-media-query($on-laptop) {
   .project-list li,
   .note-list li {
+    font-size: 1.2rem;
+  }
+}
+@include min-media-query($on-laptop) {
+  .wrapper{
     font-size: 1.2rem;
   }
 }
@@ -294,8 +313,7 @@ Notes Paginator
 
 .paginator-current {
   display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding:20px 30px;
   background-color: $grey-color-light;
 }
 

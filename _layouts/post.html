@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+</div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="wrapper"> 
   <header class="post-header">
+     
     <h1 class="section-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -12,13 +15,18 @@ layout: default
       {% if page.author %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}</p>
+   
   </header>
   <div class="custom-divider"></div>
+</div>
   <div class="post-content" itemprop="articleBody">
+    <div class="wrapper"> 
     {{ content }}
+  </div>
   </div>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+<div class="wrapper"> 

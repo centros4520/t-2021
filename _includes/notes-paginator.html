@@ -16,9 +16,9 @@
   <div class="paginator-current">Page {{ page }}</div>
  {% elsif page == 1 %} 
     <!-- <a class="page-number" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>   -->
-    <a class="page-number" href="{{ " /notes " | prepend: site.baseurl }}">{{ page }}</a>  
+    <a class="page-number" href="{{ " /notes " | prepend: site.baseurl }}">/{{ page }}</a>  
   {% else %}
-  <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a> 
+  <a class="page-number" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">/{{ page }}</a> 
    {% endif %} 
    {% endfor %} 
   {% if paginator.next_page %}
@@ -30,6 +30,7 @@
 {% endif %}
 <br/ >
 {%for link in site.article_navigation %}
+<div class="article-navigation" style="display:none">
   {% assign current = nil %}
   {% if page.url contains link.url %}
       {% assign current = 'active' %}
@@ -38,6 +39,7 @@
       <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
   </span>
   {% unless forloop.last %}|{% endunless %}
+</div>
 {% endfor %}
 
 </div>
