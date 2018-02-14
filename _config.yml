@@ -2,16 +2,17 @@ title: . A
 author: Albert Hardy
 email: albert@tanutama.com
 description: > # this means to ignore newlines until "baseurl:"
-  Designer, Improviser and Researcher of Structure and Harmony. 
-  Coherence is irresistible.
+  Designer, Improviser and Researcher. 
+  Bringing Coherent Structure and Harmony for People and Technology. 
 
+url: tanutama.com
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
 
-name: Albert Hardy
-job: Designer
+name: Albert
+job: designer
 location: Singapore
 languages: HTML, CSS and Javascript
 twitter_username: alberthardy
@@ -27,14 +28,14 @@ twitter_username: alberthardy
 
 article_navigation:
 - title: Archive
-  url: /notes/archive/   
+  url: /fieldnotes/archive/   
 - title: Category
-  url: /notes/category/  
+  url: /fieldnotes/category/  
 - title: Tag
-  url: /notes/tag/   
+  url: /fieldnotes/tag/   
 
 #https://jekyllrb.com/docs/permalinks/
-permalink: "/notes/:year/:month/:title/"
+permalink: "/fieldnotes/:year/:month/:title/"
 
 # excerpt_separator
 # http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/
@@ -43,7 +44,7 @@ excerpt_separator: <!--more-->
 # Gems
 plugins: [jekyll-paginate]
 paginate: 5
-paginate_path: "/notes/page:num"
+paginate_path: "/fieldnotes/page:num"
 
 # Build Collections
 # https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/
