@@ -6,11 +6,11 @@ orderid: 18
 date: 2016-06-24
 blurb: 'Help build better ties with our neighbours, enhance access to relevant information, and make our homes and living environment more sustainable.'
 ---
-{% include image-full.html file="/2016/3/hdb-2.jpg" alt="demo caption" height="380px" type="full" %}
+{% include image-full.html file="/2016/3/hdb-2.JPG" alt="demo caption" height="380px" type="full" %}
 <p class='sublead'>The inaugural HDB Cool Ideas Hack challenged participants to create technology-enabled solutions which would foster neighbourly ties, share relevant information quickly and easily or make HDB living greener as a community.</p>
 A total of 206 participants from student, start-up and open categories took part in the three-day events at HDB Hub.
 <!--more-->
-{% include image-full.html file="/2016/3/hdb-1.jpg" alt="demo caption" height="500px" %}
+{% include image-full.html file="/2016/3/hdb-1.JPG" alt="demo caption" height="500px" %}
 
 ### Idea: Cool Neighbots
 {% include image-full.html file="/2016/3/screenshots-app.png" alt="App Demo" height="350px" %}
