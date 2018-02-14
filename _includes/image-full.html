@@ -1,4 +1,4 @@
-{% assign imageurl = '/assets/images/' | append: include.file | prepend: site.baseurl %}
+{% assign imageurl = '/assets/images' | append: include.file | prepend: site.baseurl %}
 {::nomarkdown}
 <!-- https://stackoverflow.com/questions/29053280/jekyll-markup-appearing-in-p-tag -->
 <!-- include image-full.html file="cover.jpg" alt="demo caption" width="300px"  -->
@@ -11,7 +11,7 @@
 </figure>
 {% else %}
 <div class="BannerContainer" style="{% if include.height %}height:{{ include.height }}{% endif %}">
-<div class="BannerImage BannerImage--background" style="background-image: url(&quot;{{ imageurl }}&quot;);">
+<div class="BannerImage BannerImage--background" style="background-image: url('{{ imageurl }}');">
 </div>
 </div>
 {% endif %}
