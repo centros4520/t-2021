@@ -19,7 +19,7 @@ title: "Design for a Cause"
     <a class='project__item' href="{{ base }}{{ project.url | replace: ".html", "" }}">
         <div class='project__date'>{{ project.date  | date: "%B"  }}</div>
         <div class='project__title'>{{ project.title | strip_html | truncatewords:18 | escape  }}</div>
-        <div class='project__excerpt'>{{ project.blurb | strip_html | truncatewords:20}} </div>
+        <div class='project__excerpt'>{{ project.blurb | strip_html }} </div>
       </a>
         
   {% if forloop.last %}
