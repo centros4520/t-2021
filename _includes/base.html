@@ -1,6 +1,4 @@
-<!-- _includes/base.html 
-https://ricostacruz.com/til/relative-paths-in-jekyll
--->
+<!-- _includes/base.html https://ricostacruz.com/til/relative-paths-in-jekyll -->
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size | minus: 1 %}
 {% if    depth <= 1 %}{% assign base = '.' %}
