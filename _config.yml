@@ -1,4 +1,4 @@
-title: . A
+title: + Albert
 author: Albert Hardy
 email: albert@tanutama.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -6,6 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Bringing Coherent Structure and Harmony for People and Technology. 
 
 url: tanutama.com
+google_analytics: UA-124394-1
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
@@ -18,8 +19,6 @@ languages: HTML, CSS and Javascript
 twitter_username: alberthardy
 email_address: albert@tanutama.com
 linkedin_username:  alberthardy
-# github_username:  jonathandoe
-# codepen_username:  jonathandoe
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
