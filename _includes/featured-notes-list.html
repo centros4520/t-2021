@@ -1,10 +1,8 @@
-<!-- <header class="post-header">
-    <h1 class="section-title ">Design for a Cause</h1>
-</header> -->
-<h2>Things I do</h2>
+<h2>Things I Learned</h2>
 <section class="project__section">
-    {% assign projects = site.projects | sort: 'date' | reverse %} 
-    {% for project in projects limit:4 %} 
+ 
+    {% assign projects = site.posts | sort: 'date' | reverse %} 
+    {% for project in projects limit:2 %} 
     {% capture this_year %} {{ project.date | date: "%Y" }} {% endcapture %} 
     {% capture next_year %} {{ project.previous.date | date: "%Y" }} {% endcapture %} 
     {% if forloop.first %}
@@ -13,13 +11,12 @@
         <div class="project__list">
     {% endif %}
             <a class='project__item' href="{{ base }}{{ project.url | replace: " .html ", " " }}">
-                <div class='project__date'>{{ project.date | date: "%b %Y" }}</div>
+                <div class='project__date'>{{ project.date | date: "%-d %b %Y" }}</div>
                 <div class='project__title'>{{ project.title | strip_html | truncatewords:18 | escape }}</div>
-                <div class='project__excerpt'>{{ project.blurb | strip_html }} </div>
             </a>
    {% if forloop.last %}
-            <a class='project__item' href="{{ base }}/projects/">
-                <div class='project__viewall'>View More Projects  &rArr;</div>
+            <a class='project__item morenotes' href="{{ base }}/fieldnotes/">
+                <div class='project__viewall'>View More Notes  &rArr;</div>
             </a>
         </div>
     </div>

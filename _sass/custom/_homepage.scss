@@ -34,7 +34,7 @@
     margin: 5px 0 20px;
     @media(min-width: 640px) {
       font-size: 2.2rem;
-      max-width: 80%;
+      // max-width: 80%;
     }
   }
 }
@@ -78,6 +78,9 @@ dt {
     font-weight: bold;
     font-size: 1.2rem;
   }
+}
+.morenotes{
+  margin-top:10px;
 }
 
 @media(min-width: 640px) {

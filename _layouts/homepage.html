@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
-
 {% include head.html %}
-
 <body>
-
     {% include header-fullscreen.html %}
-
     <main class="page-content" aria-label="Content">
         <div class="wrapper">
-             <div class="jumbotron">
-                    <div class="container">
-                        <div class="intro">
-                            <p class="intro__pre">Hello!</p>
-                            <p class="intro__main">My name is <span>{{ site.name }}</span>, a {{ site.job }} who loves experimenting with ideas and making things pleasantly organised.</p>
-                            <p class="intro__post">{{ site.location }} is where I am found.</p>
-                        </div>
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="intro">
+                        <p class="intro__pre">Hello!</p>
+                        <p class="intro__main">My name is
+                            <span>{{ site.name }}</span>, a {{ site.job }} who loves experimenting with ideas and making things
+                            pleasantly organised.</p>
+                        <!-- <p class="intro__post">{{ site.location }} is where I am found.</p> -->
                     </div>
                 </div>
-        </div><!--End of Wrapper -->
+            </div>
+        </div>
+        <!--End of Wrapper -->
         <div class="wrapper">
             <div class="container">
-                    {% include featured-projects-list.html %}
+                {% include featured-notes-list.html %}
+                {% include featured-projects-list.html %}
             </div>
-        </div><!--End of Wrapper -->
-        
+        </div>
+        <!--End of Wrapper -->
     </main>
-
+    <!--End of Main -->
     {% include footer.html %}
-
 </body>
-
 </html>
