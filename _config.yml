@@ -88,5 +88,7 @@ exclude:
   - minima.gemspec
   - LICENSE.txt
   - script
+  - dist
+  - dev
 
 

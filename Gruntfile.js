@@ -10,8 +10,9 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         app: {
-            source: '',
+            source: '.',
             dist: 'dist',
+            dev: 'dev',
             baseurl: ''
         },
         env : {
@@ -20,10 +21,10 @@ module.exports = function(grunt) {
             },
         },
         watch: {
-            // sass: {
-            //     files: ['<%= app.source %>/_assets/scss/**/*.{scss,sass}'],
-            //     tasks: ['sass:server', 'autoprefixer']
-            // },
+            sass: {
+                files: ['<%= app.source %>/_sass/**/*.{scss,sass}'],
+                tasks: ['sass:server']
+            },
             // scripts: {
             //     files: ['<%= app.source %>/_assets/js/**/*.{js}'],
             //     tasks: ['uglify']
@@ -41,7 +42,7 @@ module.exports = function(grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '.jekyll/**/*.{html,yml,md,mkd,markdown}',
+                    // '.jekyll/**/*.{html,yml,md,mkd,markdown}',
                     // '.tmp/<%= app.baseurl %>/css/*.css',
                     // '.tmp/<%= app.baseurl %>/js/*.js',
                     // '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
@@ -61,7 +62,7 @@ module.exports = function(grunt) {
                         target: 'http://localhost:9000/<%= app.baseurl %>'
                     },
                     base: [
-                        '.jekyll',
+                        '<%= app.dev %>',
                         '.tmp',
                         '<%= app.source %>'
                     ]
@@ -82,7 +83,8 @@ module.exports = function(grunt) {
         clean: {
             server: [
                 '.jekyll',
-                '.tmp'
+                '.tmp',
+                '<%= app.dev %>'
             ],
             dist: {
                 files: [{
@@ -110,7 +112,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     config: '_config.yml',
-                    dest: '.jekyll/<%= app.baseurl %>'
+                    dest: '<%= app.dev %>/<%= app.baseurl %>'
                 }
             }
         },
@@ -122,7 +124,7 @@ module.exports = function(grunt) {
                     collapseBooleanAttributes: true,
                     removeAttributeQuotes: true,
                     removeRedundantAttributes: true,
-                    removeEmptyAttributes: true,
+                    // removeEmptyAttributes: true,
                     minifyJS: true,
                     minifyCSS: true
                 },
@@ -141,7 +143,7 @@ module.exports = function(grunt) {
                     beautify: true
                 },
                 files: {
-                    '.tmp/<%= app.baseurl %>/js/scripts.js': ['<%= app.source %>/_assets/js/**/*.js']
+                    '<%= app.dev %>/<%= app.baseurl %>/js/scripts.js': ['<%= app.source %>/assets/js/**/*.js']
                 }
             },
             dist: {
@@ -151,64 +153,36 @@ module.exports = function(grunt) {
                     report: 'min'
                 },
                 files: {
-                    '<%= app.dist %>/<%= app.baseurl %>/js/scripts.js': ['<%= app.source %>/_assets/js/**/*.js']
+                    '<%= app.dist %>/<%= app.baseurl %>/js/scripts.js': ['<%= app.source %>/assets/js/**/*.js']
                 }
             }
         },
-        sass: {                              // Task
-            options: {
-                lineNumbers: true,
-                includePaths: '_sass'
-            },
-            dist: {                            // Target
-              options: {                       // Target options
-                style: 'expanded',
-                
-              },
-              files: {                         // Dictionary of files
-                'main.css': 'main.scss',       // 'destination': 'source'
-                'widgets.css': 'widgets.scss'
-              }
-            },
+        sass: {
             server: {
+                options: {
+                    
+                },
                 files: [{
                     expand: true,
-                    cwd: 'assets',
-                    src: '**/*.{scss,sass}',
-                    dest: '.tmp/css',
+                    cwd: '<%= app.source %>/_sass',
+                    src:  ['main.scss'],
+                    dest: '<%= app.dev %>/assets',
                     ext: '.css'
-                  }]
+                }]
             },
-          },
-        // sass: {
-        //     options: {
-        //         includePaths: ['bower_components/bootstrap-sass/assets/stylesheets']
-        //     },
-        //     server: {
-        //         options: {
-        //             sourceMap: true
-        //         },
-        //         files: [{
-        //             expand: true,
-        //             cwd: '<%= app.source %>/_assets/scss',
-        //             src: '**/*.{scss,sass}',
-        //             dest: '.tmp/<%= app.baseurl %>/css',
-        //             ext: '.css'
-        //         }]
-        //     },
-        //     dist: {
-        //         options: {
-        //             outputStyle: 'compressed'
-        //         },
-        //         files: [{
-        //             expand: true,
-        //             cwd: '<%= app.source %>/_assets/scss',
-        //             src: '**/*.{scss,sass}',
-        //             dest: '<%= app.dist %>/<%= app.baseurl %>/css',
-        //             ext: '.css'
-        //         }]
-        //     }
-        // },
+            dist: {
+                options: {
+                    style: 'compressed'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= app.source %>/_sass/',
+                    src: ['main.scss'],
+                    dest: '<%= app.dist %>/assets',
+                    ext: '.css'
+                }]
+            }
+        },
         uncss: {
             options: {
                 htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
@@ -216,30 +190,27 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: '<%= app.dist %>/<%= app.baseurl %>/**/*.html',
-                dest: '<%= app.dist %>/<%= app.baseurl %>/css/blog.css'
+                dest: '<%= app.dist %>/<%= app.baseurl %>/sacss/blog.css'
             }
         },
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: ['last 3 versions']
-            },
-            server: {
-                files: [{
-                    expand: true,
-                    cwd: '.tmp/<%= app.baseurl %>/css',
-                    src: '**/*.css',
-                    dest: '.tmp/<%= app.baseurl %>/css'
-                }]
+            //   map: true, // inline sourcemaps
+              // or
+              map: {
+                  inline: false, // save all sourcemaps as separate files...
+                  annotation: '<%= app.dist %>/<%= app.baseurl %>/assets/' // ...to the specified directory
+              },
+              processors: [
+                require('pixrem')(), // add fallbacks for rem units
+                require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                require('cssnano')() // minify the result
+              ]
             },
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/css',
-                    src: '**/*.css',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/css'
-                }]
+              src: '<%= app.dist %>/<%= app.baseurl %>/assets/*.css'
             }
-        },
+          },
         critical: {
             dist: {
                 options: {
@@ -280,9 +251,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/assets',
                     src: '**/*.{jpg,jpeg,png,gif}',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/assets'
                 }]
             }
         },
@@ -290,9 +261,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/assets',
                     src: '**/*.svg',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/assets'
                 }]
             }
         },
@@ -302,7 +273,7 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= app.source %>',
-                    src: ['img/**/*'],
+                    src: ['assets/images/**/*'],
                     dest: '.tmp/<%= app.baseurl %>'
                 }]
             }
@@ -311,9 +282,8 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    // token:'11a41d14757e8580ba3b5524780d7e9a3bebb06a',
                     login:'albhardy',
-                    remote: 'https://github.com/albhardy/albhardy.github.io',
+                    remote: 'https://github.com/albhardy/albhardy.github.io.git',
                     remoteBranch:'master',
                     branch: 'master',
                     commit: true,
@@ -330,9 +300,8 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean:server',
             'jekyll:server',
-            // 'sass:server',
-            // 'autoprefixer:server',
-            // 'uglify:server',
+            'sass:server',
+            'uglify:server',
             'connect:livereload',
             'watch'
         ]);
@@ -341,10 +310,21 @@ module.exports = function(grunt) {
         'env:production',
         'clean:dist',
         'jekyll:dist',
-      
+        // 'imagemin',
+        'svgmin',
+        'sass:dist',
+        // 'uncss',
+        'postcss',
+        'uglify:dist',
+        'htmlmin'      
+    ]);
+    grunt.registerTask('dist', [
+        'build',
+        'connect:dist',
+        'watch'
     ]);
     grunt.registerTask('deploy', [
-        'build',
+        // 'build',
         'buildcontrol'
     ]);
     grunt.registerTask('default', [
