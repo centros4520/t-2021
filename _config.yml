@@ -46,6 +46,10 @@ plugins: [jekyll-paginate]
 paginate: 5
 paginate_path: "/fieldnotes/page:num"
 
+sass:
+  sass_dir: _sass
+  # style: compressed
+
 # Build Collections
 # https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-collections/
 collections:
@@ -74,4 +78,15 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - Gruntfile.js
+  - package.json
+  - package-lock.json
+  - History.markdown
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - screenshot.png
+  - minima.gemspec
+  - LICENSE.txt
+  - script
+
 
