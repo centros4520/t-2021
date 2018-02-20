@@ -311,7 +311,7 @@ module.exports = function(grunt) {
         'clean:dist',
         'jekyll:dist',
         // 'imagemin',
-        'svgmin',
+        // 'svgmin',
         'sass:dist',
         // 'uncss',
         'postcss',
