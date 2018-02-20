@@ -4,13 +4,20 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt, {
+        buildcontrol: 'grunt-build-control'
+      });
 
     grunt.initConfig({
         app: {
             source: '',
             dist: 'dist',
             baseurl: ''
+        },
+        env : {
+            production : {
+              JEKYLL_ENV : 'production'
+            },
         },
         watch: {
             // sass: {
@@ -96,6 +103,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
+                    config: '_config.yml',
                     dest: '<%= app.dist %>/<%= app.baseurl %>',
                 }
             },
@@ -303,11 +311,15 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git@github.com:user/repo.git',
-                    branch: 'gh-pages',
+                    // token:'11a41d14757e8580ba3b5524780d7e9a3bebb06a',
+                    login:'albhardy',
+                    remote: 'https://github.com/albhardy/albhardy.github.io',
+                    remoteBranch:'dist',
+                    branch: 'dist',
                     commit: true,
                     push: true,
-                    connectCommits: false
+                    connectCommits: false,
+                    message:'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
                 }
             }
         }
@@ -325,6 +337,16 @@ module.exports = function(grunt) {
             'watch'
         ]);
     });
+    grunt.registerTask('build', [
+        'env:production',
+        'clean:dist',
+        'jekyll:dist',
+      
+    ]);
+    grunt.registerTask('deploy', [
+        'build',
+        'buildcontrol'
+    ]);
     grunt.registerTask('default', [
         'serve'
     ]);
