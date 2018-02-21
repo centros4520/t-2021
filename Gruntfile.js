@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             //     tasks: ['uglify']
             // },
             jekyll: {
-                files: ['<%= app.source %>/**/*.{html,yml,md,mkd,markdown}'],
+                files: ['<%= app.source %>/{_data,_includes,_layouts,_post,_projects, projects}/**/*.{html,yml,md,mkd,markdown}','!<%= app.dev %>/**/*.{html}'],
                 tasks: ['jekyll:server']
             },
             // images: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    // '.jekyll/**/*.{html,yml,md,mkd,markdown}',
+                    '<%= app.dev %>/**/*.{html,yml,md,mkd,markdown}',
                     // '.tmp/<%= app.baseurl %>/css/*.css',
                     // '.tmp/<%= app.baseurl %>/js/*.js',
                     // '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
@@ -63,8 +63,7 @@ module.exports = function(grunt) {
                     },
                     base: [
                         '<%= app.dev %>',
-                        '.tmp',
-                        '<%= app.source %>'
+                        '.tmp'
                     ]
                 }
             },
