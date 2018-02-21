@@ -24,9 +24,31 @@ layout: default
     {{ content }}
   </div>
   </div>
-
+  
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+<div class="wrapper">
+  <div class="custom-divider"></div>
+  <div class="paginator-project">
+    <div class="paginator-project-prev">
+      {% if page.previous.url %}
+    <a href="{{page.previous.url}}" class="prev PaginatorLinkButton">&lArr; {{page.previous.title}}</a>
+    {% endif %} 
+    </div>
+    <div class="paginator-project-next">
+      {% if page.next.url %}
+    <a href="{{page.next.url}}" class="nxt PaginatorLinkButton">{{page.next.title}} &rArr;</a>
+    {% endif %}
+    </div>
+  </div>
+  <script>
+    document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '{{page.previous.url}}'; }
+    if (e.keyCode == '39') { window.location = '{{page.next.url}}'; }
+    };
+    </script>
+</div>
+<!-- End of paginator wrapper -->
 <div class="wrapper"> 
