@@ -8,6 +8,7 @@ excerpt_separator: <!--more-->
 Jan Chipchase gained his reputation as an extreme immersion researcher who specialise in identifying nuanced patterns of human behaviour from dense-urban to harsh, edge-of-grid locations. 
 
 <!--more-->
+{% include image-full.html file="/2017/12/field.jpg" alt="Topic" height="600px"%}
 
 After Nokia and Frog, he founded independent studio named after Deinococcus Radiodurans, an extremophilic bacteria that can survive acid, drought and even radiation where others can’t. The origins of its name are deino- (strange) -coccus (berry) radius- (radiation) -durare (surviving). The studio provides discreet international research, design and strategy services to multinational clients with global outlook. After 3 years of writing, he recently launched The Field Study Handbook on Kickstarter in May 2017 about his thesis on why and how to travel and to understand users, customers, people across markets, geographies and cultures. 
 

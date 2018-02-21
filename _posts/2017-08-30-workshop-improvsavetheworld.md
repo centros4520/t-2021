@@ -8,8 +8,11 @@ excerpt_separator: <!--more-->
 This 2.5-hour workshop by U.K.-based applied improv coach Belina Raffy. Applied improv is the application of concepts, ideas, and techniques from the world of improvisation into non-theatrical fields e.g. business, consulting, facilitating, etc. 
 
 <!--more-->
+{% include image-full.html file="/2017/8/save-board.jpg" alt="Lesson" height="400px"%}
 
 Many exercises, activities and games use in applied improvisation are designed to encourage risk taking, playfulness, team building and to be in the moment. In this way, participants could challenge their existing mindset, develop their creative potential and overtime increase their confidence while having fun.
+
+{% include image-full.html file="/2017/8/save-team.jpg" alt="Group Photo" height="400px"%}
 
 Belina highlighted the core practice of improvisation as described by Robert Poynton’s “Everything’s an Offer": to let go (mindset or practices that not serving us at the moment), notice more (well being, others, and resources that we have) and use everything that comes - all done using “Yes, And” attitude in the service of change.  She designed the workshop for changemakers based following topics:
 Useful mindsets for the 'inner game' of creating change
@@ -37,3 +40,4 @@ Some Improv exercise played
 - “[Three] people walking”:  As a group, only X number people are allowed to walk around at any one time. This exercise demonstrate coordination without communication, relying on observation, trust and initiatives.
 - “Singing in circle”: Volunteer to sing within group circle, trust that others will offer replace them anytime he/she become uncomfortable. The exercise explore Bernie dekoven model of alienation, conformity and coliberation as experience of mutual transcendence.  
 - “Diamond shape dance”: 3 participants follow dance movement of the point person in the direction they’re facing. After 15 seconds, everyone jump clockwise and follow new leader. Leaders learn how to connect with followers they can’t see; think from their perspective; make it easy to follow through logical, continuous and deliberate movement. The exercise also demonstrate that play does happen when members are building upon each others and everyone have moment of leadership. 
+

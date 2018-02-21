@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 
 Demonstrating the value of design in business is key to positioning, growing investment, and getting design into the strategic activities of companies. Unfortunately many designers and creatives find it hard to expertly assess and put a value on design. This workshop by Robb Ziegler & Deb Mrazek aimed to help design practitioner with an approach to identify (assess) and effectively communicate (express) their design value, impact and contributions for business success. 
 
+{% include image-full.html file="/2017/3/dv-group.jpg" alt="Design Value Team" height="400px"%}
+
 <!--more-->
 
 ### Evaluating Design Maturity
