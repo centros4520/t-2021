@@ -15,7 +15,7 @@ Attended by more than 180 participants, top 20 teams was then selected to pitch 
 ### Idea: Bookemon Collection Cards
 {% include image-full.html file="/2017/2/screenshots-app.png" alt="App Demo" height="350px" %}
  
-
+Our team proposed gamification of collectible cards that the students can use to play, challenge and exchange with their friends as they borrow and read books from school library.
  
 
 
