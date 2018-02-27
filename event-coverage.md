@@ -45,7 +45,7 @@ This section highlights what others mentioned about projects or events of intere
 
 # 2016
 
-- Report by JICA on [Collaboration Program with the Private Sector for Disseminating Japanese Technology for Ho Chi Minh City Public Transport Bus ICT System in Vietnam](open_jicareport.jica.go.jp/pdf/12265963.pdf)
+- Report by JICA on [Collaboration Program with the Private Sector for Disseminating Japanese Technology for Ho Chi Minh City Public Transport Bus ICT System in Vietnam](http://open_jicareport.jica.go.jp/pdf/12265963.pdf)
 
 ### Sabre Destination Hack Singapore 
 - Event recap by Sabre: [Destination Hack: Singapore – A Recap of our Global Hackathon](https://blog.developer.sabre.com/blog/2016/11/28/destination-hack-singapore-a-recap-of-our-global-hackathon/)
