@@ -11,7 +11,9 @@ blurb: '‘Reinvent Travel’'
 
 Sabre provide aspiring developers access into their API portfolio and software development kits via Sabre Dev Studio, Sabre’s open developer platform. Beside ‘Best New Technology Application’ category, Sabre has included ‘Best Use of Virtual Reality’, ‘Chat Bot Challenge’ and new widget for Sabre Red Workspace. Over 200 participants from Singapore and the Asia Pacific region registered for the event held at The Hub, Singapore’s largest co-working community of techies, entrepreneurs and creatives.  
 <!--more-->
-{% include image-full.html file="/2016/4/sabre-2.JPG" alt="demo caption" height="500px" %}
+{% include image-full.html file="/2016/4/sabre-3.jpg" alt="Destination Hack event" height="500px" %}
+
+{% include image-full.html file="/2016/4/sabre-2.JPG" alt="Destination Hack event" height="500px" %}
 
 ### Idea: Cross-channels OTA
 {% include image-full.html file="/2016/4/screenshots-app.png" alt="App Demo" height="350px" %}
