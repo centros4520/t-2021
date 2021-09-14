@@ -1,8 +1,133 @@
 ## HEAD
 
+### Documentation
+
+  * Forward port v2.5.1 release (#399)
+  * Docs: remove Google+ (#373)
+  * Update README section on adding favicons to site (#438)
+
+### Minor Enhancements
+
+  * Add Keybase to social links (#400)
+  * Solarized skins (#404)
+  * Add a placeholder of favicons (#433)
+  * fix: make page.list_title optional (#303)
+  * Add stackoverflow to social media list (#443)
+  * Add social support for dev.to (#410)
+  * Add GitLab to social (#352)
+  * Support mutiple authors on post layout (#348)
+  * Re-implement site footer markup and styles (#448)
+  * Support pagination through posts in home layout (#450)
+  * Show the last modified date of posts (#432)
+  * Set margins of hr to improve readability (#461)
+  * Export a variable to let users to custom the font family of code (#462)
+  * Set margin-bottom of pagination (#458)
+  * Adjust margins of headings to make sections clear (#467)
+  * Rename favicons.html to custom-head.html (#468)
+  * Remove RSS icon from the social media list (#470)
+  * Improve the readablility of blockquotes (#481)
+  * Extract more color rules into skins (#452)
+  * Introduce &#34;Dark Minima&#34; skin (#335)
+
+### Major Enhancements
+
+  * Allow skins to be defined and customized easily (#336)
+  * Drop support for scalar &#39;author&#39; configuration (#384)
+  * Place skins in `minima/skins` to clarify purpose (#479)
+
+### Bug Fixes
+
+  * Add missing rel=me attributes to social links (#386)
+  * Set the border radius of highlight (#426)
+  * Removed unnecessary whitespace-controls (#390)
+  * fix: overflow auto for tables (#296)
+  *  Add `overflow-wrap: break-word` to body tag (#321)
+  * Use &#34;rem&#34; unit in relative-font-size mixin (#436)
+  * Assign static value to variable outside forloop (#437)
+  * Add font-size styles for elements h5 and h6 (#441)
+  * Stop prefixing CSS calc with `-webkit-` (#445)
+  * Improve readability of post titles with diacritics (#449)
+  * Fix a bug of incorrect parsing of page.modified_date (#455)
+  * Specify the font size of the root element (#485)
+
+### Development Fixes
+
+  * Ignore .jekyll-cache (#439)
+  * Clean up and optimize .gitignore (#475)
+  * [chore] Normalize Travis CI builds (#480)
+  * chore(deps): bump Ruby version (#510)
+  * Conditionally load GFM-parser gem in CI builds (#535)
+
+## 2.5.1
+
+### Minor Enhancements
+
+  * Allow use and testing with Jekyll 4.x (#398)
+
+### Bug Fixes
+
+  * Footer overlapping issue (Support Microsoft Explorer 11) (#248)
+  * Update multiline config comment. (#346)
+
+### Development Fixes
+
+  * remove deprecated `sudo: false` in .travis.yml (#347)
+
+## 2.5.0
+
+### Bug Fixes
+
+  * Add `jekyll-feed` plugin in config (#228)
+
+### Minor Enhancements
+
+  * Stick footer for short posts (#223)
+  * Consolidate trigger SVG paths (#148)
+
+## 2.4.1
+
+### Bug Fixes
+
+  * Reintroduce removed social includes for backwards compatibility (#217)
+
+## 2.4.0
+
+### Minor Enhancements
+
+  * Add better system fonts (#205)
+  * Remove whitespace due to Liquid tags in generated HTML (#202)
+  * Adding Mastodon to the social networks (#198)
+
+### Bug Fixes
+
+  * social icons should resolve baseurl properly (#201)
+  * fix: styling main element in IE 11 (#199)
+
+### Documentation
+
+  * Improve thw wording in index.md (#175)
+  * Update config description comment (#203)
+
+## 2.3.0
+
+  * Add option to show excerpts on the homepage (#90)
+  * Handle RSS feed with jekyll-feed (#183)
+  * Test build with Ruby 2.4 on CI (#184)
+  * Document how to customize navigation links (#192)
+
+## 2.2.1
+
+  * Revert social_sites hash for retrocompatibility (#190)
+
+## 2.2.0
+
 ### Minor Enhancements
 
   * handling content outside of posts (#88)
+  * Add default table styles (#144)
+  * Add `jekyll-seo-tag` dependency (#139)
+  * Add Microformats markup (#160)
+  * Add more social links (#141)
 
 ### Documentation
 

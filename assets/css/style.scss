@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  url('https://fonts.googleapis.com/css?family=Oswald'),
+  url('https://fonts.googleapis.com/css?family=Roboto'),
+  "font-awesome/font-awesome",
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize",
+  // "minima",
+  "tanutama/custom";

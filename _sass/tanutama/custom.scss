@@ -1,7 +1,7 @@
 @charset "utf-8";
 // Import Mixin.
-@import "custom/mixin";
-@import "custom/mixin-grid";
+@import "../custom/mixin";
+@import "../custom/mixin-grid";
 
 // Define defaults for each variable.
 $base-font-family1: 'Oswald',sans-serif !default;
@@ -248,6 +248,7 @@ h2.project__title,
 h2.note__title {
   font-size: 2.5rem;
   line-height: 2.5rem;
+  margin-top: 0;
 }
 
 .project__year,
@@ -335,10 +336,10 @@ code {
   background-color: transparent;
 }
 
-.highlighter-rouge .highlight,
-.highlight {
-  background: #333;
-}
+// .highlighter-rouge .highlight,
+// .highlight {
+//   background: #333;
+// }
 
 /* -------------------------------- 
 
@@ -413,7 +414,7 @@ Footer
   height: 16px;
   display: inline-block;
   fill: #{$grey-color};
-  margin-right: 5px;
+  // margin-right: 5px;
   vertical-align: text-top;
 }
  
@@ -429,6 +430,9 @@ Footer
   }
 }
 
+.post-header {
+  h1{ margin-top: 0 }
+}
 /* -------------------------------- 
 
 // Import partials.
@@ -441,6 +445,6 @@ Footer
   "custom/homepage-featured",
   "custom/homepage-til",
   "custom/project-list",
-  "custom/project-featured",
-  "code/monokai.sublime"
+  "custom/project-featured"
+  // "code/monokai.sublime"
 ;

@@ -1,10 +1,13 @@
 ---
 layout: page
-title: Event Coverage
+title: References
 permalink: /events/
 ---
 
 This section highlights what others mentioned about projects or events of interests. 
+
+# 2019
+- NEC: [Ministry of Movement and NEC to collaborate on future of urban mobility](https://www.nec.com/en/press/201910/global_20191016_02.html) 
 
 # 2017
 

@@ -10,6 +10,40 @@ google_analytics: UA-124394-1
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  social_links:
+    twitter: alberthardy
+    linkedin: alberthardy
+    # github:  jekyll
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com  
+  
+
+# show_excerpts: false # set to true to show excerpts on the homepage
 
 name: Albert
 job: designer
@@ -41,10 +75,13 @@ permalink: "/fieldnotes/:year/:month/:title/"
 excerpt_separator: <!--more-->
 
 # Gems
-plugins: [jekyll-paginate]
+# plugins: [jekyll-paginate]
 paginate: 5
 paginate_path: "/fieldnotes/page:num"
-
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
 sass:
   sass_dir: _sass
   # style: compressed
@@ -89,5 +126,4 @@ exclude:
   - script
   - dist
   - dev
-
 
