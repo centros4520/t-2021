@@ -4,7 +4,8 @@ email: albert@tanutama.com
 description: > # this means to ignore newlines until "baseurl:"
   Designer, Improviser and Researcher. Bridging interaction gap between people and technology; Creating new possibilities. 
 
-url: tanutama.com
+url: centros4520.github.io
+baseurl:t-2021
 google_analytics: UA-124394-1
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
